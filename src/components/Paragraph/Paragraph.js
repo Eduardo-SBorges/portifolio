@@ -34,14 +34,20 @@ const Paragraph = ({
 }
 
 Paragraph.propTypes = {
-	color: PropTypes.string.isRequired,
-	fontSize: PropTypes.string
+	color: PropTypes.string,
+	fontSize: PropTypes.string,
+	fontFamily: PropTypes.string,
+	fontWeight: PropTypes.string,
+	lineHeight: PropTypes.string,
+	textAlign: PropTypes.string,
+	margin: PropTypes.string,
+	padding: PropTypes.string,
+	width: PropTypes.string,
+	text: PropTypes.string
 }
 
 Paragraph.defaultProps = {
-	fontSize: '3rem',
-	fontFamily: 'Roboto, sans-serif',
-	color: '#000'
+	fontFamily: 'Roboto, sans-serif'
 }
 
 export default Paragraph
