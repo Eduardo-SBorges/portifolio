@@ -85,7 +85,7 @@ const Title = ({
 			)
 			break
 	}
-	return <div>{size}</div>
+	return <>{size}</>
 }
 
 Title.propTypes = {

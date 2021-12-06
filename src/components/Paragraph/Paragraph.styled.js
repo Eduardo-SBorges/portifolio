@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const P = styled.p`
+const P = styled.p`
 	font-size: ${props => props.fontSize};
 	font-family: ${props => props.fontFamily};
 	font-weight: ${props => props.fontWeight};
