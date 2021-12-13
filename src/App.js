@@ -5,14 +5,14 @@ import GlobalStyle from './assets/GlobalStyle.js'
 import { darkTheme, lightTheme } from './assets/themes.js'
 import Title from './components/Title/Title.js'
 import Avatar from './components/Avatar/Avatar.js'
+import { NavBar } from './components/NavBar/NavBar.js'
 
 const App = () => {
 	return (
 		<ThemeProvider theme={darkTheme}>
 			<GlobalStyle />
-			<Paragraph text="Olá mundo" />
-			<Title size="h1" text="titulo" />
 			<Avatar text="Arthur Ropke" />
+			<NavBar />
 		</ThemeProvider>
 	)
 }
