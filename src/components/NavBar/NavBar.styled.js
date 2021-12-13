@@ -14,6 +14,8 @@ export const Container = styled.nav`
 			a {
 				color: ${props => props.theme.text};
 				line-height: 2.5rem;
+				font-size: 0.8rem;
+				letter-spacing: 0.05rem;
 			}
 		}
 	}
