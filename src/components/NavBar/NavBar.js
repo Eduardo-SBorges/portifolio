@@ -1,9 +1,8 @@
 import React from 'react'
-// import PropsType from 'prop-types'
 import { Container } from './NavBar.styled'
 import { navLinks } from '../../constants/navLinks'
 
-export function NavBar(props) {
+const NavBar = () => {
 	return (
 		<Container>
 			<ul>
@@ -17,3 +16,5 @@ export function NavBar(props) {
 		</Container>
 	)
 }
+
+export default NavBar

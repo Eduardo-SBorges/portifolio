@@ -12,6 +12,7 @@ const Paragraph = ({
 	margin,
 	padding,
 	width,
+	letterSpacing,
 	text
 }) => {
 	return (
@@ -26,6 +27,7 @@ const Paragraph = ({
 				margin={margin}
 				padding={padding}
 				width={width}
+				letterSpacing={letterSpacing}
 			>
 				{text}
 			</P>
@@ -43,11 +45,13 @@ Paragraph.propTypes = {
 	margin: PropTypes.string,
 	padding: PropTypes.string,
 	width: PropTypes.string,
-	text: PropTypes.string
+	text: PropTypes.string,
+	letterSpacing: PropTypes.string
 }
 
 Paragraph.defaultProps = {
-	fontFamily: 'Roboto, sans-serif'
+	fontFamily: 'Roboto, sans-serif',
+	letterSpacing: '0.05rem'
 }
 
 export default Paragraph

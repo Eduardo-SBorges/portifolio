@@ -1,10 +1,10 @@
 import React from 'react'
 import Title from '../Title/Title'
-import imgAvatar from '../../assets/img/avatar.jpg'
 import { BoxAvatar, BoxName } from './Avatar.styled'
 import PropTypes from 'prop-types'
+import { personalData } from '../../constants/data'
 
-const Avatar = ({ margin, width, height, position, top, bottom, text }) => {
+const Avatar = ({ margin, width, height, position, top, bottom }) => {
 	return (
 		<BoxAvatar
 			margin={margin}
@@ -15,9 +15,9 @@ const Avatar = ({ margin, width, height, position, top, bottom, text }) => {
 			bottom={bottom}
 		>
 			<BoxName position="absolute" bottom="0">
-				<Title size="h2" text={text} textAlign="center" />
+				<Title size="h2" text={personalData.name} textAlign="center" />
 			</BoxName>
-			<img src={imgAvatar} alt={text} />
+			<img src={personalData.imgProfileSrc} alt={personalData.name} />
 		</BoxAvatar>
 	)
 }
