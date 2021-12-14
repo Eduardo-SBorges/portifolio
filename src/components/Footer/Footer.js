@@ -9,7 +9,12 @@ const Footer = () => {
 		<Container>
 			<BoxSocial>
 				{logoSocial.map(social => (
-					<a href={social.url} target="_blank" rel="noreferrer">
+					<a
+						href={social.url}
+						key={social.name}
+						target="_blank"
+						rel="noreferrer"
+					>
 						{social.svgRede}
 					</a>
 				))}
@@ -20,5 +25,4 @@ const Footer = () => {
 	)
 }
 
-//
 export default Footer
