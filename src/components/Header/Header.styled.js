@@ -19,7 +19,6 @@ export const Box = styled.div`
 	position: absolute;
 	right: 20px;
 	cursor: pointer;
-	/* border-left: 1px solid; */
 
 	&:before {
 		content: '';

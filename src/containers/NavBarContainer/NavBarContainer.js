@@ -7,8 +7,7 @@ import { Container } from './NavBarContainer.styled'
 
 const NavBarContainer = () => {
 	const { open, setOpen } = React.useContext(GlobalContext)
-	console.log(open)
-
+	
 	return (
 		<Container open={open}>
 			<Avatar />
