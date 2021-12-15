@@ -1,7 +1,7 @@
 {
 	"git.enabled": false,
 	"files.exclude": {
-		"node_modules": false,
+		"node_modules": true,
 		".vscode": false,
 		"README.md": true,
 		".gitignore": true,
@@ -9,6 +9,6 @@
 		"yarn-lock.json": true,
 		"package-lock.json": true,
 		"yarn.lock": true,
-		"public": true
+		"public": false
 	}
 }

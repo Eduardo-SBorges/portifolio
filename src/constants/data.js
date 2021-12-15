@@ -12,7 +12,8 @@ import imgAvatar from '../assets/img/avatar.jpg'
 
 export const personalData = {
 	name: 'Arthur Ropke',
-	imgProfileSrc: imgAvatar
+	imgProfileSrc: imgAvatar,
+	profission: 'Web Developer'
 }
 
 // Social Media
