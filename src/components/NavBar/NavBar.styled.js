@@ -27,7 +27,7 @@ export const Container = styled.nav`
 				cursor: pointer;
 
 				&:first-child {
-					border: 3px solid white;
+					border: 3px solid ${props => props.theme.border};
 					border-radius: 50%;
 				}
 			}

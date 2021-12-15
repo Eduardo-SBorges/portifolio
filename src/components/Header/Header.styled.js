@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const Container = styled.header`
 	position: absolute;
 	display: flex;
 	align-items: center;
@@ -10,6 +10,7 @@ export const Container = styled.div`
 	width: 100%;
 	background-color: ${props => props.theme.menuBackGround};
 	text-align: center;
+	opacity: 0;
 `
 
 export const Box = styled.div`
