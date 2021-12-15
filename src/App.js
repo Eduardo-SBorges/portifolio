@@ -9,6 +9,7 @@ import { Screens } from './App.styled'
 import { GlobalContextProvider } from './GlobalContext'
 import { CfgParticles } from './components/Particles/Particles'
 
+
 const App = () => {
 	return (
 		<GlobalContextProvider>

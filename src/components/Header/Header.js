@@ -9,7 +9,7 @@ import { Container, Box } from './Header.styled'
 const Header = () => {
 	const { open, setOpen } = React.useContext(GlobalContext)
 	const toggle = () => setOpen(!open)
-
+		
 	const sizeLogoSvg = `large`
 
 	return (
