@@ -8,7 +8,7 @@ import Header from './components/Header/Header'
 import { Screens } from './App.styled'
 import { GlobalContextProvider } from './GlobalContext'
 import { CfgParticles } from './components/Particles/Particles'
-
+import ExperienceSection from './containers/ExperienceSection/ExperienceSection'
 
 const App = () => {
 	return (
@@ -17,9 +17,10 @@ const App = () => {
 			<ThemeProvider theme={darkTheme}>
 				<GlobalStyle />
 				<Screens>
-					<Header />
+					<ExperienceSection />
+					{/* <Header />
 					<NavBarContainer />
-					<Home />
+					<Home /> */}
 				</Screens>
 			</ThemeProvider>
 		</GlobalContextProvider>

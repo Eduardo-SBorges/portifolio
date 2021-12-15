@@ -47,3 +47,69 @@ export const logoSocial = [
 		url: 'https://www.twitter.com/'
 	}
 ]
+
+// Screen Resume
+
+export const personalResume = [
+	{
+		title: 'EXPERIENCE'
+	},
+	{
+		experience: [
+			{
+				subTitle: 'LEAD UI DESIGNER',
+				company: 'BIG DESIGN COMPANY, NY, USA',
+				date: '2018 - 2016',
+				description:
+					'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
+			},
+			{
+				title: 'LEAD UI DESIGNER',
+				company: 'BIG DESIGN COMPANY, NY, USA',
+				date: '2018 - 2016',
+				description:
+					'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
+			},
+			{
+				title: 'LEAD UI DESIGNER',
+				company: 'BIG DESIGN COMPANY, NY, USA',
+				date: '2018 - 2016',
+				description:
+					'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
+			}
+		]
+	}
+]
+
+// Screen EDUCATION
+
+export const personalEducation = [
+	{
+		title: 'EDUCATION'
+	},
+	{
+		education: [
+			{
+				title: 'LEAD UI DESIGNER',
+				school: 'BIG DESIGN COMPANY, NY, USA',
+				date: '2018 - 2016',
+				description:
+					'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
+			},
+			{
+				title: 'LEAD UI DESIGNER',
+				school: 'BIG DESIGN COMPANY, NY, USA',
+				date: '2018 - 2016',
+				description:
+					'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
+			},
+			{
+				title: 'LEAD UI DESIGNER',
+				school: 'BIG DESIGN COMPANY, NY, USA',
+				date: '2018 - 2016',
+				description:
+					'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
+			}
+		]
+	}
+]
