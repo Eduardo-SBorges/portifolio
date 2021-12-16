@@ -9,6 +9,9 @@ export const BoxExperienceSection = Styled.section`
   margin-left: 10%;
   margin-top: 2.5%;
   gap: 5rem;
+  position: relative;
+  z-index: 10;
+
 
   div:first-child {
     width:100%;
@@ -46,7 +49,7 @@ li{
     transition: height 2s ease-in-out;
 
     /* &:hover{
-      height:200px;
+      height:150px;
       width: 2px;
     } */
 
