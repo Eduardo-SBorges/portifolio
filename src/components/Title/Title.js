@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { H1, H2, H3, H4 } from '../../components/Title/Title.styled'
+import { H1, H2, H3, H4, H5 } from '../../components/Title/Title.styled'
 
 const Title = ({
 	size,
@@ -65,6 +65,23 @@ const Title = ({
 				>
 					{text}
 				</H4>
+			)
+			break
+		case 'h5':
+			size = (
+				<H5
+					fontSize={fontSize}
+					fontFamily={fontFamily}
+					fontWeight={fontWeight}
+					lineHeight={lineHeight}
+					textAlign={textAlign}
+					color={color}
+					margin={margin}
+					padding={padding}
+					width={width}
+				>
+					{text}
+				</H5>
 			)
 			break
 		default:

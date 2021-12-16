@@ -13,6 +13,16 @@ const GlobalStyle = createGlobalStyle`
     body {
       background-color: ${props => props.theme.background};
       color: ${props => props.theme.text}; 
+
+      
+      /* display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw; */
+    }
+
+    p, span{
+      font-family: 'Roboto', sans-serif;
     }
   `
 

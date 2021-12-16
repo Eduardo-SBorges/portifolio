@@ -8,7 +8,7 @@ import Header from './components/Header/Header'
 import { Screens } from './App.styled'
 import { GlobalContextProvider } from './GlobalContext'
 import { CfgParticles } from './components/Particles/Particles'
-
+import ExperienceSection from './containers/ExperienceSection/ExperienceSection'
 
 const App = () => {
 	return (
@@ -19,7 +19,8 @@ const App = () => {
 				<Screens>
 					<Header />
 					<NavBarContainer />
-					<Home />
+					<ExperienceSection />
+					{/* <Home /> */}
 				</Screens>
 			</ThemeProvider>
 		</GlobalContextProvider>
