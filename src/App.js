@@ -13,14 +13,14 @@ import ExperienceSection from './containers/ExperienceSection/ExperienceSection'
 const App = () => {
 	return (
 		<GlobalContextProvider>
-			<CfgParticles />
+			{/* <CfgParticles /> */}
 			<ThemeProvider theme={darkTheme}>
 				<GlobalStyle />
 				<Screens>
-					<ExperienceSection />
-					{/* <Header />
+					<Header />
 					<NavBarContainer />
-					<Home /> */}
+					<ExperienceSection />
+					{/* <Home /> */}
 				</Screens>
 			</ThemeProvider>
 		</GlobalContextProvider>

@@ -52,32 +52,31 @@ export const logoSocial = [
 
 export const personalResume = [
 	{
-		title: 'EXPERIENCE'
+		id: 1,
+		subTitle: 'LEAD UI DESIGNER',
+		company: 'BIG DESIGN COMPANY, NY, USA',
+		dateStart: '2016',
+		dateEnd: '2018',
+		description:
+			'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
 	},
 	{
-		experience: [
-			{
-				subTitle: 'LEAD UI DESIGNER',
-				company: 'BIG DESIGN COMPANY, NY, USA',
-				date: '2018 - 2016',
-				description:
-					'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
-			},
-			{
-				title: 'LEAD UI DESIGNER',
-				company: 'BIG DESIGN COMPANY, NY, USA',
-				date: '2018 - 2016',
-				description:
-					'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
-			},
-			{
-				title: 'LEAD UI DESIGNER',
-				company: 'BIG DESIGN COMPANY, NY, USA',
-				date: '2018 - 2016',
-				description:
-					'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
-			}
-		]
+		id: 2,
+		subTitle: 'LEAD UI DESIGNER',
+		company: 'BIG DESIGN COMPANY, NY, USA',
+		dateStart: '2016',
+		dateEnd: '2018',
+		description:
+			'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
+	},
+	{
+		id: 3,
+		subTitle: 'LEAD UI DESIGNER',
+		company: 'BIG DESIGN COMPANY, NY, USA',
+		dateStart: '2016',
+		dateEnd: '2018',
+		description:
+			'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
 	}
 ]
 
@@ -85,31 +84,30 @@ export const personalResume = [
 
 export const personalEducation = [
 	{
-		title: 'EDUCATION'
+		id: 4,
+		subTitle: 'LEAD UI DESIGNER',
+		school: 'BIG DESIGN COMPANY, NY, USA',
+		dateStart: '2016',
+		dateEnd: '2018',
+		description:
+			'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
 	},
 	{
-		education: [
-			{
-				title: 'LEAD UI DESIGNER',
-				school: 'BIG DESIGN COMPANY, NY, USA',
-				date: '2018 - 2016',
-				description:
-					'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
-			},
-			{
-				title: 'LEAD UI DESIGNER',
-				school: 'BIG DESIGN COMPANY, NY, USA',
-				date: '2018 - 2016',
-				description:
-					'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
-			},
-			{
-				title: 'LEAD UI DESIGNER',
-				school: 'BIG DESIGN COMPANY, NY, USA',
-				date: '2018 - 2016',
-				description:
-					'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
-			}
-		]
+		id: 5,
+		subTitle: 'LEAD UI DESIGNER',
+		school: 'BIG DESIGN COMPANY, NY, USA',
+		dateStart: '2016',
+		dateEnd: '2018',
+		description:
+			'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
+	},
+	{
+		id: 6,
+		subTitle: 'LEAD UI DESIGNER',
+		school: 'BIG DESIGN COMPANY, NY, USA',
+		dateStart: '2016',
+		dateEnd: '2018',
+		description:
+			'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
 	}
 ]
