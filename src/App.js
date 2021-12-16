@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components'
 import GlobalStyle from './assets/GlobalStyle'
 import { darkTheme, lightTheme } from './assets/themes'
 import Home from './screens/Home/Home'
+import About from './screens/About/About'
 import NavBarContainer from './containers/NavBarContainer/NavBarContainer'
 import Header from './components/Header/Header'
 import { Screens } from './App.styled'
@@ -19,7 +20,8 @@ const App = () => {
 				<Screens>
 					<Header />
 					<NavBarContainer />
-					<Home />
+					{/* <Home /> */}
+					<About/>
 				</Screens>
 			</ThemeProvider>
 		</GlobalContextProvider>

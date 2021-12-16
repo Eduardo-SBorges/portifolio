@@ -13,7 +13,10 @@ import imgAvatar from '../assets/img/avatar.jpg'
 export const personalData = {
 	name: 'Arthur Ropke',
 	imgProfileSrc: imgAvatar,
-	profission: 'Web Developer'
+	profission: 'Web Developer',
+	aboutMeTitle:'Sobre mim',
+	aboutMeText:'Sou muito dedicado em evoluir meus conhecimentos na área, além de me testar constantemente com desafios , estou procurando oportunidades para começar minha carreira e desenvolver minhas habilidades na prática.Apaixonado por filosofia,tecnologia e inovação.' ,
+
 }
 
 // Social Media
