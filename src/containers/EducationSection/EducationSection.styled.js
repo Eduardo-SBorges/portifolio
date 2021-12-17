@@ -6,10 +6,11 @@ export const Container = Styled.section`
   align-items: center;
   justify-content: center;
   width: auto;
+  margin-left: 10%;
   gap: 5rem;
   position: relative;
   z-index: -1;
-
+  
   h3 {
     font-size: 28px;
   }
@@ -32,17 +33,16 @@ export const List = Styled.ul`
   width: 90%;
   height: 100%;
 
-  li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    span {
+    span{
       background-color: #fff;
       width: 2px;
       height: 150px;
       max-height: 100%;
-      margin-left: 10%;
       margin-right: 3rem;
       position: relative;
       transition: height 2s ease-in-out;

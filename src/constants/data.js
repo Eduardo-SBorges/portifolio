@@ -87,8 +87,8 @@ export const personalEducation = [
 		id: 4,
 		subTitle: 'LEAD UI DESIGNER',
 		school: 'BIG DESIGN COMPANY, NY, USA',
-		dateStart: '2016',
-		dateEnd: '2018',
+		dateStart: '2015',
+		dateEnd: '2020',
 		description:
 			'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
 	},
@@ -96,8 +96,8 @@ export const personalEducation = [
 		id: 5,
 		subTitle: 'LEAD UI DESIGNER',
 		school: 'BIG DESIGN COMPANY, NY, USA',
-		dateStart: '2016',
-		dateEnd: '2018',
+		dateStart: '2015',
+		dateEnd: '2020',
 		description:
 			'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
 	},
@@ -105,8 +105,8 @@ export const personalEducation = [
 		id: 6,
 		subTitle: 'LEAD UI DESIGNER',
 		school: 'BIG DESIGN COMPANY, NY, USA',
-		dateStart: '2016',
-		dateEnd: '2018',
+		dateStart: '2015',
+		dateEnd: '2020',
 		description:
 			'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
 	}
