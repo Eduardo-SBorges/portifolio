@@ -1,13 +1,10 @@
 import React, { useEffect, useRef } from 'react'
 import Typed from 'typed.js'
-import Paragraph from '../../components/Paragraph/Paragraph'
 import Title from '../../components/Title/Title'
 import { personalData } from '../../constants/data'
+import { Container } from './HomeScreen.styled'
 
-import { Container } from './Home.styled'
-
-const Home = () => {
-	// Create Ref element.
+const HomeScreen = () => {
 	const el = useRef(null)
 
 	useEffect(() => {
@@ -36,4 +33,4 @@ const Home = () => {
 	)
 }
 
-export default Home
+export default HomeScreen

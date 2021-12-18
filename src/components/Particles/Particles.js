@@ -1,10 +1,7 @@
 import Particles from 'react-tsparticles'
 
 export const CfgParticles = () => {
-	const particlesInit = main => {
-		// you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-	}
-
+	const particlesInit = main => {}
 	const particlesLoaded = container => {}
 
 	return (
