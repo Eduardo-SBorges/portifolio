@@ -8,7 +8,12 @@ const GlobalStyle = createGlobalStyle`
   outline: 0;
   box-sizing: border-box;
   text-decoration: none;
+  overflow-x: hidden;
 
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  
   /* Não permite que o usuário selecione textos na página. */
   -webkit-touch-callout: none;  /* iPhone OS, Safari */
   -webkit-user-select: none;    /* Chrome, Safari 3 */

@@ -1,10 +1,8 @@
 export const animaContainer = {
-  hidden: { opacity: 1, scale: 0, x: 200, y: -350 },
+  hidden: { opacity: 0, x: 500 },
   visible: {
     opacity: 1,
-    scale: 1,
     x: 0,
-    y: 0,
     transition: {
       duration: 2,
       delayChildren: 2,
