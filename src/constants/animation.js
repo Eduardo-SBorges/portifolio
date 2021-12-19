@@ -1,0 +1,44 @@
+export const animaContainer = {
+  hidden: { opacity: 1, scale: 0, x: 200, y: -350 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    x: 0,
+    y: 0,
+    transition: {
+      duration: 2,
+      delayChildren: 2,
+      staggerChildren: 1,
+    },
+  },
+};
+
+export const animaItems = {
+  hidden: { y: 20, x: 200, opacity: 0, scale: 0 },
+  visible: {
+    y: 0,
+    x: 0,
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 2,
+      delayChildren: 1,
+      staggerChildren: 1,
+    },
+  },
+};
+
+export const animaSubItems = {
+  hidden: { y: 20, x: 200, opacity: 0, scale: 0 },
+  visible: {
+    y: 0,
+    x: 0,
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 2,
+      delayChildren: 1,
+      staggerChildren: 1,
+    },
+  },
+};
