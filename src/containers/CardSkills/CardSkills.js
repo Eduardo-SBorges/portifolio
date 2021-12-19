@@ -1,7 +1,8 @@
-import Paragraph from '../../components/Paragraph/Paragraph';
 import Title from '../../components/Title/Title';
 import { personalSkills } from '../../constants/data';
 import { List, Box, Container } from './CardSkills.styled';
+import { motion } from 'framer-motion';
+import { animaItems, animaSubItems } from '../../constants/animation';
 
 const CardSkills = () => {
   return (
@@ -9,14 +10,18 @@ const CardSkills = () => {
       <List>
         {personalSkills.map((skill) => {
           return (
-            <li key={skill.id}>
+            <motion.li key={skill.id} variants={animaItems}>
               <Box>
                 <Title size="h3" text={skill.subTitle} />
                 {skill.skills.map((skill) => {
-                  return <Title size="h4" key={skill} text={skill} />;
+                  return (
+                    <motion.div variants={animaSubItems}>
+                      <Title size="h4" key={skill} text={skill} />
+                    </motion.div>
+                  );
                 })}
               </Box>
-            </li>
+            </motion.li>
           );
         })}
       </List>
