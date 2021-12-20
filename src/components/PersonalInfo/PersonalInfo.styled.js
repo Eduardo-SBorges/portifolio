@@ -5,6 +5,7 @@ const Container = styled.div`
     flex-direction: column;
     align-items: flex-start;
     max-width: 66.6%;
+    height: 100%;
     padding-right: 15px;
     padding-left:15px;
 

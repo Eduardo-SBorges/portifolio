@@ -10,8 +10,8 @@ export const Container = Styled.main`
 
 export const FlexBox = Styled.div`
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   
   @media (max-width: 1400px) {
     flex-direction: column;

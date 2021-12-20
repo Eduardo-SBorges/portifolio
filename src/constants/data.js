@@ -5,6 +5,7 @@ import {
 	GitHub,
 	Twitter
 } from '@mui/icons-material'
+import { ListItemAvatar } from '@mui/material'
 
 import imgAvatar from '../assets/img/avatar.jpg'
 
@@ -50,3 +51,77 @@ export const logoSocial = [
 		url: 'https://www.twitter.com/'
 	}
 ]
+
+// Screen Resume
+
+export const personalResume = [
+	{
+		id: 1,
+		subTitle: 'LEAD UI DESIGNER',
+		company: 'BIG DESIGN COMPANY, NY, USA',
+		dateStart: '2016',
+		dateEnd: '2018',
+		description:
+			'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
+	},
+	{
+		id: 2,
+		subTitle: 'LEAD UI DESIGNER',
+		company: 'BIG DESIGN COMPANY, NY, USA',
+		dateStart: '2016',
+		dateEnd: '2018',
+		description:
+			'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
+	},
+	{
+		id: 3,
+		subTitle: 'LEAD UI DESIGNER',
+		company: 'BIG DESIGN COMPANY, NY, USA',
+		dateStart: '2016',
+		dateEnd: '2018',
+		description:
+			'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
+	}
+]
+
+// Screen EDUCATION
+
+export const personalEducation = [
+	{
+		id: 4,
+		subTitle: 'LEAD UI DESIGNER',
+		school: 'BIG DESIGN COMPANY, NY, USA',
+		dateStart: '2015',
+		dateEnd: '2020',
+		description:
+			'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
+	},
+	{
+		id: 5,
+		subTitle: 'LEAD UI DESIGNER',
+		school: 'BIG DESIGN COMPANY, NY, USA',
+		dateStart: '2015',
+		dateEnd: '2020',
+		description:
+			'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
+	},
+	{
+		id: 6,
+		subTitle: 'LEAD UI DESIGNER',
+		school: 'BIG DESIGN COMPANY, NY, USA',
+		dateStart: '2015',
+		dateEnd: '2020',
+		description:
+			'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima'
+	}
+]
+
+export const personalInformation = {
+	title: 'Informações Pessoais',
+	name: 'Lineu Lima',
+	age: '25',
+	residence: 'Pelotas, RS, Brasil',
+	email: 'lineulima1@gmail.com',
+	linkedin: 'https://www.linkedin.com/in/lineulima1/',
+	github: 'https://github.com/lineulima1'
+}

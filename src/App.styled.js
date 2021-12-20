@@ -3,13 +3,13 @@ import styled from 'styled-components'
 export const Screens = styled.div`
 	display: grid;
 	grid-template:
-		'NavBarContainer Home'
-		'NavBarContainer Home'
+		'NavBarContainer Main'
+		'NavBarContainer Main'
 		/ 200px 1fr;
-	@media (max-width: 768px) {
+	@media (max-width: 788px) {
 		grid-template:
 			'Header Header'
-			'Home Home'
+			'Main Main'
 			/ 200px 1fr;
 
 		header {
@@ -23,6 +23,6 @@ export const Screens = styled.div`
 	}
 
 	main {
-		grid-area: Home;
+		grid-area: Main;
 	}
 `
