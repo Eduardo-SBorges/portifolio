@@ -24,7 +24,8 @@ export const Container = styled.div`
 `
 export const UL = styled.ul`
 list-style: none;
-text-decoration: none;`
+text-decoration: none;
+margin-bottom: 1rem;`
 
 export const LI = styled.li`
 line-height: 1em;
