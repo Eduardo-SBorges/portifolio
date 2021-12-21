@@ -1,12 +1,13 @@
-import Styled from 'styled-components';
+import Styled from 'styled-components'
+import { motion } from 'framer-motion'
 
-export const Container = Styled.main`
+export const Container = Styled(motion.main)`
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 80%;
   margin: 2% 8%;
-`;
+`
 
 export const FlexBox = Styled.div`
   display: flex;
@@ -21,4 +22,4 @@ export const FlexBox = Styled.div`
   @media (max-width: 576px) {
     margin-top: 10%;
   }
-`;
+`

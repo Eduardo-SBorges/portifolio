@@ -1,4 +1,4 @@
-import Styled from 'styled-components';
+import Styled from 'styled-components'
 
 export const Container = Styled.section`
   display: flex;
@@ -22,7 +22,7 @@ export const Container = Styled.section`
   h5 {
     font-size: 12px;
   }
-`;
+`
 
 export const List = Styled.ul`
   display: flex;
@@ -84,10 +84,10 @@ export const List = Styled.ul`
       }
     }
   }
-`;
+`
 
 export const Box = Styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-`;
+`
