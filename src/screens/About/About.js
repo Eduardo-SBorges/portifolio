@@ -5,6 +5,7 @@ import { personalData } from '../../constants/data'
 import { Container, FlexBox } from './About.styled'
 import Information from '../../components/Information/Information'
 import SectionHeaderContainer from '../../containers/SectionHeaderContainer/SectionHeaderContainer';
+import Expertises from '../../components/Expertises/Expertises'
 
 const About = () => {
   return (
@@ -31,6 +32,7 @@ const About = () => {
           github={personalInformation.github}
         />
       </FlexBox>
+      <Expertises title='Expertises' />
     </Container>
   )
 }

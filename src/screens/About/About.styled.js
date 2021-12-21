@@ -12,6 +12,7 @@ export const FlexBox = Styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-bottom: 35px;
   
   @media (max-width: 1400px) {
     flex-direction: column;

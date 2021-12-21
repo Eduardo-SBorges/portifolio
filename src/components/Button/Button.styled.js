@@ -21,7 +21,7 @@ border-color: #00a3e1;
 
 &:hover {
   background-color: #00a3e1;
-  color: #000;
+  color: #000 !important;
   transition: all .3s ease;
 }
 `;
