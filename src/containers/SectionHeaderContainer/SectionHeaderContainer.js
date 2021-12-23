@@ -1,6 +1,6 @@
-import React from 'react'
-import { ContainerHeader } from './SectionHeaderContainer.styled'
-import  Title  from '../../components/Title/Title'
+import React from 'react';
+import { ContainerHeader } from './SectionHeaderContainer.styled';
+import Title from '../../components/Title/Title';
 import {
   HomeOutlined,
   PermIdentity,
@@ -8,39 +8,38 @@ import {
   WorkOutlineOutlined,
   EmailOutlined,
   BookOutlined,
-} from '@mui/icons-material'
+  Error,
+} from '@mui/icons-material';
 
-const SectionHeaderContainer = ({ text,icon }) => {
+const SectionHeaderContainer = ({ text, icon }) => {
   switch (icon) {
     case 'home':
-      icon = <HomeOutlined fontSize="large" />
-      break
+      icon = <HomeOutlined fontSize="large" />;
+      break;
     case 'about':
-      icon = <PermIdentity fontSize="large" />
-      break
+      icon = <PermIdentity fontSize="large" />;
+      break;
     case 'experience':
-      icon = <BadgeOutlined fontSize="large" />
-      break
+      icon = <BadgeOutlined fontSize="large" />;
+      break;
     case 'skills':
-      icon = <BookOutlined fontSize="large" />
-      break
+      icon = <BookOutlined fontSize="large" />;
+      break;
     case 'portfolio':
-      icon = <WorkOutlineOutlined fontSize="large" />
-      break
+      icon = <WorkOutlineOutlined fontSize="large" />;
+      break;
     case 'contact':
-      icon = <EmailOutlined fontSize="large" />
-      break
+      icon = <EmailOutlined fontSize="large" />;
+      break;
     default:
-      icon = <HomeOutlined fontSize="large" />
-      break
+      icon = <Error fontSize="large" />;
+      break;
   }
-  {
-    return (
-      <ContainerHeader>
-        <Title size="h2" text={text}/>
-        {icon}
-      </ContainerHeader>
-    )
-  }
-}
-export default SectionHeaderContainer
+  return (
+    <ContainerHeader>
+      <Title size="h2" text={text} />
+      {icon}
+    </ContainerHeader>
+  );
+};
+export default SectionHeaderContainer;
