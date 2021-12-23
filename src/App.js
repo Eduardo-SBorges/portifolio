@@ -9,6 +9,7 @@ import Header from './components/Header/Header'
 import { Screens } from './App.styled'
 import { GlobalContextProvider } from './GlobalContext'
 import { CfgParticles } from './components/Particles/Particles'
+import SkillsScreen from './screens/Skills/SkillsScreen'
 import ResumeScreen from './screens/Resume/ResumeScreen'
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
 					<About />
 					{/* <ResumeScreen/> */}
 					{/* <HomeScreen /> */}
+					{/* <SkillsScreen /> */}
 				</Screens>
 			</ThemeProvider>
 		</GlobalContextProvider>

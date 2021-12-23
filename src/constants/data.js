@@ -12,7 +12,8 @@ import {
 } from '@mui/icons-material'
 import { ListItemAvatar } from '@mui/material'
 
-import imgAvatar from '../assets/img/avatar.jpg'
+
+import imgAvatar from '../assets/img/avatar.jpg';
 
 // Personal Data
 
@@ -51,6 +52,8 @@ export const expert = [
   },
 ]
 
+
+
 export const logoSocial = [
   {
     name: 'FACEBOOK',
@@ -78,6 +81,8 @@ export const logoSocial = [
     url: 'https://www.twitter.com/',
   },
 ]
+
+
 
 // Screen Resume
 
@@ -152,3 +157,27 @@ export const personalInformation = {
   linkedin: 'https://www.linkedin.com/in/lineulima1/',
   github: 'https://github.com/lineulima1',
 }
+
+export const personalSkills = [
+  {
+    id: 7,
+    subTitle: 'Front-End',
+    skills: ['HTML', 'CSS', 'Javascript', 'React'],
+  },
+  {
+    id: 8,
+    subTitle: 'DevOps',
+    skills: ['Git', 'GitFlow'],
+  },
+  {
+    id: 9,
+    subTitle: 'UI/UX',
+    skills: ['Adobe XD', 'Figma', 'Photoshop'],
+  },
+  {
+    id: 10,
+    subTitle: 'Gestão',
+    skills: ['Agile', 'Scrum', 'Kanban', 'Coaching'],
+  },
+];
+

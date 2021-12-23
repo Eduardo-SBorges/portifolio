@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -9,6 +9,10 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
   text-decoration: none;
 
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  
   /* Não permite que o usuário selecione textos na página. */
   -webkit-touch-callout: none;  /* iPhone OS, Safari */
   -webkit-user-select: none;    /* Chrome, Safari 3 */
@@ -22,12 +26,12 @@ const GlobalStyle = createGlobalStyle`
   -khtml-user-drag: none;
   -moz-user-drag: none;
   -o-user-drag: none;
-  user-drag: none;
+  -user-drag: none;
   }
 
   body {
-    background-color: ${(props) => props.theme.background};
-    color: ${(props) => props.theme.text}; 
+    background-color: ${props => props.theme.background};
+    color: ${props => props.theme.text}; 
     
   p, span{
     font-family: 'Roboto', sans-serif;
@@ -35,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display, serif'
-  }
-`;
+  } 
+`
 
-export default GlobalStyle;
+export default GlobalStyle
