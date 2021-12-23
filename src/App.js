@@ -3,7 +3,6 @@ import { Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './assets/GlobalStyle';
 import { darkTheme, lightTheme } from './assets/themes';
-/* import HomeScreen from './screens/Home/HomeScreen' */
 import NavBarContainer from './containers/NavBarContainer/NavBarContainer';
 import Header from './components/Header/Header';
 import { Screens } from './App.styled';

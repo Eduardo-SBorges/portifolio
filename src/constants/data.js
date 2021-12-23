@@ -4,7 +4,14 @@ import {
   LinkedIn,
   GitHub,
   Twitter,
-} from '@mui/icons-material';
+} from '@mui/icons-material'
+import {
+  ComputerOutlined,
+  RemoveRedEyeOutlined,
+  DevicesOutlined,
+} from '@mui/icons-material'
+import { ListItemAvatar } from '@mui/material'
+
 
 import imgAvatar from '../assets/img/avatar.jpg';
 
@@ -14,11 +21,38 @@ export const personalData = {
   name: 'Arthur Ropke',
   imgProfileSrc: imgAvatar,
   profission: 'Web Developer',
-};
+  aboutMeTitle: 'Sobre mim',
+  aboutMeText:
+    'Sou muito dedicado em evoluir meus conhecimentos na área, além de me testar constantemente com desafios, estou procurando oportunidades para começar minha carreira e desenvolver minhas habilidades na prática.Apaixonado por filosofia,tecnologia e inovação.',
+}
 
 // Social Media
 
-const sizeLogoSvg = `medium`;
+const sizeLogoSvg = `medium`
+const sizeLogo = `large`
+
+export const expert = [
+  {
+    title: 'Desenvolvimento Web',
+    icon: <ComputerOutlined fontSize={sizeLogo} />,
+    description:
+      'Desenvolvimento web desde o início, como um hobby, até hoje, como um profissional. Atualmente trabalho como desenvolvedor front-end, com foco em ReactJS.',
+  },
+  {
+    title: 'Responsividade',
+    icon: <DevicesOutlined fontSize={sizeLogo} />,
+    description:
+      'Desenvolvimento web desde o início, como um hobby, até hoje, como um profissional. Atualmente trabalho como desenvolvedor front-end, com foco em ReactJS.',
+  },
+  {
+    title: 'Web Design',
+    icon: <RemoveRedEyeOutlined fontSize={sizeLogo} />,
+    description:
+      'Desenvolvimento web desde o início, como um hobby, até hoje, como um profissional. Atualmente trabalho como desenvolvedor front-end, com foco em ReactJS.',
+  },
+]
+
+
 
 export const logoSocial = [
   {
@@ -46,7 +80,9 @@ export const logoSocial = [
     svgRede: <Twitter fontSize={sizeLogoSvg} />,
     url: 'https://www.twitter.com/',
   },
-];
+]
+
+
 
 // Screen Resume
 
@@ -78,7 +114,7 @@ export const personalResume = [
     description:
       'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima',
   },
-];
+]
 
 // Screen EDUCATION
 
@@ -110,7 +146,17 @@ export const personalEducation = [
     description:
       'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima',
   },
-];
+]
+
+export const personalInformation = {
+  title: 'Informações Pessoais',
+  name: 'Lineu Lima',
+  age: '25',
+  residence: 'Pelotas, RS, Brasil',
+  email: 'lineulima1@gmail.com',
+  linkedin: 'https://www.linkedin.com/in/lineulima1/',
+  github: 'https://github.com/lineulima1',
+}
 
 export const personalSkills = [
   {
@@ -134,3 +180,4 @@ export const personalSkills = [
     skills: ['Agile', 'Scrum', 'Kanban', 'Coaching'],
   },
 ];
+
