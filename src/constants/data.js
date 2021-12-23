@@ -4,14 +4,12 @@ import {
   LinkedIn,
   GitHub,
   Twitter,
-} from '@mui/icons-material'
+} from '@mui/icons-material';
 import {
   ComputerOutlined,
   RemoveRedEyeOutlined,
   DevicesOutlined,
-} from '@mui/icons-material'
-import { ListItemAvatar } from '@mui/material'
-
+} from '@mui/icons-material';
 
 import imgAvatar from '../assets/img/avatar.jpg';
 
@@ -24,12 +22,12 @@ export const personalData = {
   aboutMeTitle: 'Sobre mim',
   aboutMeText:
     'Sou muito dedicado em evoluir meus conhecimentos na área, além de me testar constantemente com desafios, estou procurando oportunidades para começar minha carreira e desenvolver minhas habilidades na prática.Apaixonado por filosofia,tecnologia e inovação.',
-}
+};
 
 // Social Media
 
-const sizeLogoSvg = `medium`
-const sizeLogo = `large`
+const sizeLogoSvg = `medium`;
+const sizeLogo = `large`;
 
 export const expert = [
   {
@@ -50,9 +48,7 @@ export const expert = [
     description:
       'Desenvolvimento web desde o início, como um hobby, até hoje, como um profissional. Atualmente trabalho como desenvolvedor front-end, com foco em ReactJS.',
   },
-]
-
-
+];
 
 export const logoSocial = [
   {
@@ -80,9 +76,7 @@ export const logoSocial = [
     svgRede: <Twitter fontSize={sizeLogoSvg} />,
     url: 'https://www.twitter.com/',
   },
-]
-
-
+];
 
 // Screen Resume
 
@@ -114,9 +108,7 @@ export const personalResume = [
     description:
       'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima',
   },
-]
-
-// Screen EDUCATION
+];
 
 export const personalEducation = [
   {
@@ -146,7 +138,9 @@ export const personalEducation = [
     description:
       'Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima',
   },
-]
+];
+
+// Screen About Me
 
 export const personalInformation = {
   title: 'Informações Pessoais',
@@ -156,7 +150,9 @@ export const personalInformation = {
   email: 'lineulima1@gmail.com',
   linkedin: 'https://www.linkedin.com/in/lineulima1/',
   github: 'https://github.com/lineulima1',
-}
+};
+
+// Screen Skills
 
 export const personalSkills = [
   {
@@ -180,4 +176,3 @@ export const personalSkills = [
     skills: ['Agile', 'Scrum', 'Kanban', 'Coaching'],
   },
 ];
-

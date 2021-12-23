@@ -9,6 +9,7 @@ import { Screens } from './App.styled';
 import { GlobalContextProvider } from './GlobalContext';
 import { CfgParticles } from './components/Particles/Particles';
 import HomeScreen from './screens/Home/HomeScreen';
+import AboutScreen from './screens/About/AboutScreen';
 import ResumeScreen from './screens/Resume/ResumeScreen';
 import SkillsScreen from './screens/Skills/SkillsScreen';
 import ErrorScreen from './screens/Error/ErrorScreen';
@@ -24,7 +25,7 @@ const App = () => {
           <NavBarContainer />
           <Routes>
             <Route path="/" element={<HomeScreen />} />
-            <Route path="/sobre" element={<ErrorScreen />} />
+            <Route path="/sobre" element={<AboutScreen />} />
             <Route path="/experiencia" element={<ResumeScreen />} />
             <Route path="/habilidades" element={<SkillsScreen />} />
             <Route path="/portfolio" element={<ErrorScreen />} />
