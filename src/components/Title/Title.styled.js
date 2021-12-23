@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-const H1 = styled.h1`
+const H1 = styled(motion.h1)`
   font-size: ${(props) => props.fontSize};
   font-family: ${(props) => props.fontFamily};
   font-weight: ${(props) => props.fontWeight};
@@ -12,7 +13,7 @@ const H1 = styled.h1`
   width: ${(props) => props.width};
 `;
 
-const H2 = styled.h2`
+const H2 = styled(motion.h2)`
   font-size: ${(props) => props.fontSize};
   font-family: ${(props) => props.fontFamily};
   font-weight: ${(props) => props.fontWeight};
@@ -23,7 +24,7 @@ const H2 = styled.h2`
   padding: ${(props) => props.padding};
   width: ${(props) => props.width};
 `;
-const H3 = styled.h3`
+const H3 = styled(motion.h3)`
   font-size: ${(props) => props.fontSize};
   font-family: ${(props) => props.fontFamily};
   font-weight: ${(props) => props.fontWeight};
@@ -34,7 +35,7 @@ const H3 = styled.h3`
   padding: ${(props) => props.padding};
   width: ${(props) => props.width};
 `;
-const H4 = styled.h4`
+const H4 = styled(motion.h4)`
   font-size: ${(props) => props.fontSize};
   font-family: ${(props) => props.fontFamily};
   font-weight: ${(props) => props.fontWeight};
@@ -45,7 +46,7 @@ const H4 = styled.h4`
   padding: ${(props) => props.padding};
   width: ${(props) => props.width};
 `;
-const H5 = styled.h5`
+const H5 = styled(motion.h5)`
   font-size: ${(props) => props.fontSize};
   font-family: ${(props) => props.fontFamily};
   font-weight: ${(props) => props.fontWeight};

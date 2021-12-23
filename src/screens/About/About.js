@@ -6,13 +6,21 @@ import { Container, FlexBox } from './About.styled'
 import Information from '../../components/Information/Information'
 import SectionHeaderContainer from '../../containers/SectionHeaderContainer/SectionHeaderContainer';
 import Expertises from '../../components/Expertises/Expertises'
+import { animaContainer,animaItems} from '../../constants/animation'
 
 const About = () => {
   return (
-    <Container>
-		<SectionHeaderContainer text="Sobre" icon="about" />
-      <FlexBox>
-        <PersonalInfo
+    <Container
+    variants={animaItems}
+			initial="hidden"
+			animate="visible"
+      >
+		<SectionHeaderContainer text="Sobre" icon="about"  />
+      <FlexBox 
+      variants={animaItems}
+			initial="hidden"
+			animate="visible">
+        <PersonalInfo 
           title={personalData.aboutMeTitle}
           text={personalData.aboutMeText}
         />

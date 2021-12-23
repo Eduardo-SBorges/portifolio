@@ -1,6 +1,7 @@
 import Styled from 'styled-components';
+import { motion } from 'framer-motion'
 
-export const Container = Styled.main`
+export const Container = Styled(motion.main)`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,7 +9,7 @@ export const Container = Styled.main`
   margin: 2% 8%;
 `;
 
-export const FlexBox = Styled.div`
+export const FlexBox = Styled(motion.div)`
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;

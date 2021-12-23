@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
 	display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -27,7 +28,7 @@ list-style: none;
 text-decoration: none;
 margin-bottom: 1rem;`
 
-export const LI = styled.li`
+export const LI = styled(motion.li)`
 line-height: 1em;
 margin-bottom: 15px;
 `

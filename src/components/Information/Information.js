@@ -2,10 +2,14 @@ import React from 'react'
 import Title from '../Title/Title'
 import { UL,LI,SPAN,Container } from './Information.styled'
 import Button from '../Button/Button'
+import { animaItems } from '../../constants/animation'
 
 const Information = ({title,name,nameInfo,age,ageInfo,email,emailInfo,residence,residenceInfo,linkedin,linkedinInfo,github,githubInfo}) => {
 	return (
-        <Container>
+        <Container 
+        variants={animaItems}
+        initial="hidden"
+        animate="visible">
 		<Title 
 		size='h3' 
 		text={title}
