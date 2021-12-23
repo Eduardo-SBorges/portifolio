@@ -3,17 +3,13 @@ import EducationSection from '../../containers/EducationSection/EducationSection
 import ExperienceSection from '../../containers/ExperienceSection/ExperienceSection';
 import SectionHeaderContainer from '../../containers/SectionHeaderContainer/SectionHeaderContainer';
 import { Container, FlexBox } from './ResumeScreen.styled';
-import { animaContainerResume } from '../../constants/animation';
+import { animaContainer, animaItems } from '../../constants/animation';
 
 const ResumeScreen = () => {
   return (
-    <Container
-      variants={animaContainerResume}
-      initial="hidden"
-      animate="visible"
-    >
+    <Container variants={animaContainer} initial="hidden" animate="visible">
       <SectionHeaderContainer text="Experiência" icon="experience" />
-      <FlexBox>
+      <FlexBox variants={animaItems}>
         <ExperienceSection />
         <EducationSection />
       </FlexBox>

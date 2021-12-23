@@ -9,6 +9,7 @@ export const ContainerHeader = styled.div`
   color: ${(props) => props.theme.text};
   border-bottom: 1px dashed ${(props) => props.theme.border};
   padding-bottom: 10px;
+  border-radius: 6%;
 
   @media (max-width: 788px) {
     margin-top: 15%;

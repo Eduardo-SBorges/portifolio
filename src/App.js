@@ -12,6 +12,7 @@ import HomeScreen from './screens/Home/HomeScreen';
 import AboutScreen from './screens/About/AboutScreen';
 import ResumeScreen from './screens/Resume/ResumeScreen';
 import SkillsScreen from './screens/Skills/SkillsScreen';
+import PortfolioScreen from './screens/Portfolio/PortfolioScreen';
 import ErrorScreen from './screens/Error/ErrorScreen';
 
 const App = () => {
@@ -28,7 +29,7 @@ const App = () => {
             <Route path="/sobre" element={<AboutScreen />} />
             <Route path="/experiencia" element={<ResumeScreen />} />
             <Route path="/habilidades" element={<SkillsScreen />} />
-            <Route path="/portfolio" element={<ErrorScreen />} />
+            <Route path="/portfolio" element={<PortfolioScreen />} />
             <Route path="/contato" element={<ErrorScreen />} />
           </Routes>
         </Screens>

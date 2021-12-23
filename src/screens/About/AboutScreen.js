@@ -6,11 +6,11 @@ import { Container, FlexBox } from './AboutScreen.styled';
 import Information from '../../components/Information/Information';
 import SectionHeaderContainer from '../../containers/SectionHeaderContainer/SectionHeaderContainer';
 import Expertises from '../../components/Expertises/Expertises';
-import { animaItems } from '../../constants/animation';
+import { animaContainer, animaItems } from '../../constants/animation';
 
 const About = () => {
   return (
-    <Container variants={animaItems} initial="hidden" animate="visible">
+    <Container variants={animaContainer} initial="hidden" animate="visible">
       <SectionHeaderContainer text="Sobre" icon="about" />
       <FlexBox variants={animaItems} initial="hidden" animate="visible">
         <PersonalInfo

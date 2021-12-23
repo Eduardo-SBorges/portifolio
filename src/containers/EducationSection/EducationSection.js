@@ -3,7 +3,7 @@ import Title from '../../components/Title/Title';
 import { personalEducation } from '../../constants/data';
 import { List, Box, Container } from './EducationSection.styled';
 import { motion } from 'framer-motion';
-import { animaResumeItem, animaLine } from '../../constants/animation';
+import { animaSubItems, animaLine } from '../../constants/animation';
 
 const EducationSection = () => {
   return (
@@ -12,7 +12,7 @@ const EducationSection = () => {
         <Title size="h3" text="EDUCAÇÃO" />
         {personalEducation.map((education) => {
           return (
-            <motion.li key={education.id} variants={animaResumeItem}>
+            <motion.li key={education.id} variants={animaSubItems}>
               <motion.span variants={animaLine}>
                 <Paragraph text={education.dateStart} />
                 <Paragraph text={education.dateEnd} />

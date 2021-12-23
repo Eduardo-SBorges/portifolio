@@ -1,6 +1,7 @@
 import React from 'react';
 import { Btn } from './Button.styled';
 import PropTypes from 'prop-types';
+import { animaSubItems } from '../../constants/animation';
 
 const Button = ({ onClick, type, text, size, padding, width }) => {
   switch (size) {
@@ -17,9 +18,9 @@ const Button = ({ onClick, type, text, size, padding, width }) => {
       width = '200px';
       break;
     case 'small':
-        padding = '10px';
-        width = '190px';
-        break;
+      padding = '10px';
+      width = '190px';
+      break;
     default:
       padding = '10px';
       width = '100px';
@@ -28,6 +29,7 @@ const Button = ({ onClick, type, text, size, padding, width }) => {
 
   return (
     <Btn
+      variants={animaSubItems}
       onClick={onClick}
       type={type}
       size={size}

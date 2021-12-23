@@ -16,7 +16,7 @@ export const Container = Styled.section`
     padding: 0 10px;
     margin-bottom: 5%;
     position: relative;
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid #00A3E1;
 
     &::before {
       position: absolute;
@@ -24,7 +24,7 @@ export const Container = Styled.section`
       width: 2px;
       height: 5px;
       left: 0;
-      background-color: #fff;
+      background-color: #00A3E1;
       bottom: 0;
     }
 
@@ -34,7 +34,7 @@ export const Container = Styled.section`
     width: 2px;
     height: 5px;
     right: 0;
-    background-color: #fff;
+    background-color: #00A3E1;
     bottom: 0;
     }
   }
