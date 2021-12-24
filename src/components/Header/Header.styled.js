@@ -5,12 +5,16 @@ export const Container = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 0;
+  z-index: 1;
   padding: 1.2rem 0;
   width: 100%;
   background-color: ${(props) => props.theme.menuBackGround};
   text-align: center;
   opacity: 0;
+
+  @media (max-width: 788px) {
+    width: 100vw;
+  }
 `;
 
 export const Box = styled.div`

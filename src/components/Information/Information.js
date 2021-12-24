@@ -2,7 +2,8 @@ import React from 'react';
 import Title from '../Title/Title';
 import { UL, LI, SPAN, Container } from './Information.styled';
 import Button from '../Button/Button';
-import { animaItems, animaSubItems } from '../../constants/animation';
+import { animaSubItems } from '../../constants/animation';
+import arquiveTXT from '../../assets/download/exemplo.txt';
 
 const Information = ({
   title,
@@ -41,14 +42,16 @@ const Information = ({
         </LI>
         <LI variants={animaSubItems}>
           <SPAN>{linkedinInfo}</SPAN>
-          {linkedin}
+          <a href={linkedin}>Acesse o Link Aqui</a>
         </LI>
         <LI variants={animaSubItems}>
           <SPAN>{githubInfo}</SPAN>
-          {github}
+          <a href={github}>Acesse o Link Aqui</a>
         </LI>
       </UL>
-      <Button size="small" text="Download CV" />
+      <a href={arquiveTXT} download>
+        <Button size="small" text="Download CV" />
+      </a>
     </Container>
   );
 };

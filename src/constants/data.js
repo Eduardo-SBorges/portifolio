@@ -20,7 +20,7 @@ import deploy2 from '../assets/img/deploy2.jpg';
 export const personalData = {
   name: 'Arthur Ropke',
   imgProfileSrc: imgAvatar,
-  profission: 'Web Developer',
+  profission: 'Desenvolvedor',
   aboutMeTitle: 'Sobre mim',
   aboutMeText:
     'Sou muito dedicado em evoluir meus conhecimentos na área, além de me testar constantemente com desafios, estou procurando oportunidades para começar minha carreira e desenvolver minhas habilidades na prática.Apaixonado por filosofia,tecnologia e inovação.',
@@ -183,8 +183,21 @@ export const personalProjects = [
   {
     id: 11,
     subTitle: 'Youtube Clone',
-    description: 'Clone do Youtube usando React.js',
-    technologies: ['React.js', 'Redux', 'Firebase'],
+    description:
+      'Clone do Youtube usando React.jsClone do Youtube usando React.jsClone do Youtube usando React.jsClone do Youtube usando React.jsClone do Youtube usando React.js',
+    technologies: [
+      'React.js',
+      'Redux',
+      'Firebase',
+      'Redux',
+      'Firebase',
+      'Redux',
+      'Firebase',
+      'Redux',
+      'Firebase',
+      'Redux',
+      'Firebase',
+    ],
     urlRepository:
       'https://github.com/Eduardo-SBorges/React_Clone_Youtube_Interface',
     urlProject:

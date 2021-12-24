@@ -27,7 +27,7 @@ const HomeScreen = () => {
     <Container>
       <Title size="h1" text={personalData.name} />
       <p>
-        I am <span ref={el}></span>
+        Eu sou um <span ref={el}></span>
       </p>
     </Container>
   );

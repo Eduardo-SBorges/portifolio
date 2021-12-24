@@ -5,10 +5,15 @@ const Container = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 66.6%;
+  width: 70%;
   height: 100%;
   padding-right: 15px;
   padding-left: 15px;
+
+  @media (max-width: 1100px) {
+    width: 100%;
+    text-align: center;
+  }
 
   h3 {
     font-size: 22px;
@@ -16,6 +21,11 @@ const Container = styled(motion.div)`
     margin-bottom: 20px;
     color: ${(props) => props.theme.text};
     line-height: 1.2;
+
+    @media (max-width: 1100px) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   p {

@@ -11,6 +11,7 @@ export const Container = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
   h1 {
     font-size: 4.75rem;
@@ -19,5 +20,9 @@ export const Container = styled.main`
   p {
     margin-top: 2rem;
     font-size: 1.85rem;
+  }
+
+  span {
+    color: #00a3e1;
   }
 `;

@@ -10,6 +10,7 @@ import {
   BoxInfo,
   BoxTechnologies,
   BoxButtons,
+  BoxButtonsMedia,
 } from './CardProject.styled';
 import { personalProjects } from '../../constants/data';
 import { animaItems } from '../../constants/animation';
@@ -19,10 +20,10 @@ const CardProject = () => {
     <Container>
       {personalProjects.map((project) => {
         return (
-          <FlexBox variants={animaItems}>
+          <FlexBox variants={animaItems} key={project.id}>
             <FlexBoxLeft>
               <BoxInfo>
-                <Title key={project.id} text={project.subTitle} />
+                <Title size="h2" text={project.subTitle} />
                 <Paragraph text={project.description} />
                 <BoxTechnologies>
                   <Title size="h3" text="Tecnologias Utilizadas:" />
@@ -40,6 +41,14 @@ const CardProject = () => {
             </FlexBoxLeft>
             <FlexBoxRight>
               <img src={project.img} alt={project.subTitle} />
+              <BoxButtonsMedia>
+                <a href={project.urlRepository}>
+                  <Button text="Ver Repositório" size="small" />
+                </a>
+                <a href={project.urlProject}>
+                  <Button text="Ver a Página Ativa" size="small" />
+                </a>
+              </BoxButtonsMedia>
             </FlexBoxRight>
           </FlexBox>
         );

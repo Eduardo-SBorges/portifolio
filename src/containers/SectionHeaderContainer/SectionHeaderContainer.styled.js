@@ -5,9 +5,10 @@ export const ContainerHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-top: -3%;
   margin-bottom: 5%;
   color: ${(props) => props.theme.text};
-  border-bottom: 1px dashed ${(props) => props.theme.border};
+  border-bottom: 2px dashed ${(props) => props.theme.border};
   padding-bottom: 10px;
   border-radius: 6%;
 

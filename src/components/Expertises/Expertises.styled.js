@@ -62,7 +62,7 @@ export const UL = styled(motion.ul)`
   padding-right: 15px;
   padding-left: 15px;
 
-  @media (max-width: 786px) {
+  @media (max-width: 1100px) {
     flex-direction: column;
   }
 
@@ -81,6 +81,7 @@ export const UL = styled(motion.ul)`
     margin-bottom: 0;
     margin-top: 15px;
     margin-bottom: 15px;
+    text-align: center;
   }
   li {
     display: flex;

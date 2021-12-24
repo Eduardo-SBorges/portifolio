@@ -2,27 +2,24 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 export const Btn = styled(motion.button)`
-  border: 2px solid #ffffff;
+  width: ${(props) => props.width};
+  padding: ${(props) => props.padding};
+  font-size: ${(props) => props.size};
   color: #00a3e1 !important;
-  padding: 10px 20px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  border-color: #00a3e1;
   text-transform: uppercase;
   background-color: transparent;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  min-height: 3.1em;
   cursor: pointer;
-  font-size: 14px;
-  color: #ffffff;
-  font-weight: 600;
-  position: relative;
-  line-height: 100%;
-  letter-spacing: 1px;
-  overflow: hidden;
-  border-color: #00a3e1;
 
   &:hover {
     background-color: #00a3e1;
     color: #000 !important;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
   }
 `;

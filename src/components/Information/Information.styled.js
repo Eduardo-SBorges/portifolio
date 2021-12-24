@@ -1,49 +1,78 @@
-import styled from 'styled-components'
-import { motion } from 'framer-motion'
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const Container = styled(motion.div)`
-	display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 66.6%;
-    padding-right: 15px;
-    padding-left:15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30%;
+  padding-right: 15px;
+  padding-left: 15px;
 
-    h3{
-        font-size:22px;
-        font-weight:700;
-        margin-bottom:20px;
-        color: ${props => props.theme.text};
-        line-height: 1.2;
+  @media (max-width: 1100px) {
+    width: 100%;
+    text-align: start;
+
+    a {
+      @media (max-width: 1100px) {
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
-    line-height: 1.65;
-    margin-bottom:1rem;
-    font-size:16px;
-    color: ${props => props.theme.text};
-    font-weight: 400;
-    font-family: 'Roboto', sans-serif;
-`
+  }
+
+  h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: ${(props) => props.theme.text};
+    line-height: 1.2;
+
+    @media (max-width: 1100px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  a {
+    color: ${(props) => props.theme.text};
+    text-decoration: underline;
+  }
+
+  line-height: 1.65;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  color: ${(props) => props.theme.text};
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+`;
+
 export const UL = styled.ul`
-list-style: none;
-text-decoration: none;
-margin-bottom: 1rem;`
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 1rem;
+`;
 
 export const LI = styled(motion.li)`
-line-height: 1em;
-margin-bottom: 15px;
-`
+  line-height: 1em;
+  margin-bottom: 15px;
+
+  &:first-child {
+    margin-top: 1%;
+  }
+`;
 
 export const SPAN = styled.span`
-font-family: "Playfair Display", serif;
-font-size: 16px;
-font-weight: 700;
-letter-spacing: .5px;
-border-bottom: 2px solid #ffffff;
-    border-bottom-color: rgb(255, 255, 255);
-position: relative;
-display: inline-block;
-margin-right: 15px;
-padding-bottom: 1px;
-color: #ffffff;
-border-color: #00A3E1 !important;
-`
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #ffffff;
+  border-bottom-color: rgb(255, 255, 255);
+  position: relative;
+  display: inline-block;
+  margin-right: 15px;
+  padding-bottom: 1px;
+  color: #ffffff;
+  border-color: #00a3e1 !important;
+`;
