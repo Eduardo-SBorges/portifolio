@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
   outline: 0;
   box-sizing: border-box;
   text-decoration: none;
+  x-overflow: hidden;
 
   &::-webkit-scrollbar {
     display: none;
@@ -30,8 +31,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: ${props => props.theme.background};
-    color: ${props => props.theme.text}; 
+    background-color: ${(props) => props.theme.background};
+    color: ${(props) => props.theme.text}; 
     
   p, span{
     font-family: 'Roboto', sans-serif;
@@ -40,6 +41,6 @@ const GlobalStyle = createGlobalStyle`
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display, serif'
   } 
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;

@@ -12,13 +12,15 @@ import {
 } from '@mui/icons-material';
 
 import imgAvatar from '../assets/img/avatar.jpg';
+import deploy1 from '../assets/img/deploy1.jpg';
+import deploy2 from '../assets/img/deploy2.jpg';
 
 // Personal Data
 
 export const personalData = {
   name: 'Arthur Ropke',
   imgProfileSrc: imgAvatar,
-  profission: 'Web Developer',
+  profission: 'Desenvolvedor',
   aboutMeTitle: 'Sobre mim',
   aboutMeText:
     'Sou muito dedicado em evoluir meus conhecimentos na área, além de me testar constantemente com desafios, estou procurando oportunidades para começar minha carreira e desenvolver minhas habilidades na prática.Apaixonado por filosofia,tecnologia e inovação.',
@@ -174,5 +176,61 @@ export const personalSkills = [
     id: 10,
     subTitle: 'Gestão',
     skills: ['Agile', 'Scrum', 'Kanban', 'Coaching'],
+  },
+];
+
+export const personalProjects = [
+  {
+    id: 11,
+    subTitle: 'Youtube Clone',
+    description:
+      'Clone do Youtube usando React.jsClone do Youtube usando React.jsClone do Youtube usando React.jsClone do Youtube usando React.jsClone do Youtube usando React.js',
+    technologies: [
+      'React.js',
+      'Redux',
+      'Firebase',
+      'Redux',
+      'Firebase',
+      'Redux',
+      'Firebase',
+      'Redux',
+      'Firebase',
+      'Redux',
+      'Firebase',
+    ],
+    urlRepository:
+      'https://github.com/Eduardo-SBorges/React_Clone_Youtube_Interface',
+    urlProject:
+      'https://eduardo-sborges.github.io/React_Clone_Youtube_Interface/',
+    img: deploy1,
+  },
+  {
+    id: 12,
+    subTitle: 'WildBeast',
+    description: 'Website usando CSS Grid Layout',
+    technologies: ['HTML', 'CSS', 'Javascript'],
+    urlRepository: 'https://github.com/Eduardo-SBorges/WebPage_CSS_Grid_Layout',
+    urlProject: 'https://eduardo-sborges.github.io/WebPage_CSS_Grid_Layout/',
+    img: deploy2,
+  },
+  {
+    id: 13,
+    subTitle: 'Youtube Clone',
+    description: 'Clone do Youtube usando React.js',
+    technologies: ['React.js', 'Redux', 'Firebase'],
+    urlRepository:
+      'https://github.com/Eduardo-SBorges/React_Clone_Youtube_Interface',
+    urlProject:
+      'https://eduardo-sborges.github.io/React_Clone_Youtube_Interface/',
+    img: deploy1,
+  },
+  {
+    id: 14,
+    subTitle: 'WildBeast',
+    description: 'Website usando CSS Grid Layout',
+    technologies: ['HTML', 'CSS', 'Javascript'],
+    urlRepository: 'https://github.com/Eduardo-SBorges/WebPage_CSS_Grid_Layout',
+    urlProject: 'https://eduardo-sborges.github.io/WebPage_CSS_Grid_Layout/',
+    img: deploy2,
   },
 ];

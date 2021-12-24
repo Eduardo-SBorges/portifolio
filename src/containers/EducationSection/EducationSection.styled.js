@@ -1,4 +1,4 @@
-import Styled from 'styled-components'
+import Styled from 'styled-components';
 
 export const Container = Styled.section`
   display: flex;
@@ -13,6 +13,29 @@ export const Container = Styled.section`
   
   h3 {
     font-size: 28px;
+    padding: 0 10px;
+    position: relative;
+    border-bottom: 1px solid #00A3E1;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 5px;
+      left: 0;
+      background-color: #00A3E1;
+      bottom: 0;
+    }
+
+    &::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 5px;
+    right: 0;
+    background-color: #00A3E1;
+    bottom: 0;
+    }
   }
 
   h4 {
@@ -21,8 +44,9 @@ export const Container = Styled.section`
 
   h5 {
     font-size: 12px;
+    color: #00A3E1
   }
-`
+`;
 
 export const List = Styled.ul`
   display: flex;
@@ -84,10 +108,10 @@ export const List = Styled.ul`
       }
     }
   }
-`
+`;
 
 export const Box = Styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-`
+`;

@@ -13,9 +13,9 @@ const CardSkills = () => {
             <motion.li key={skill.id} variants={animaItems}>
               <Box>
                 <Title size="h3" text={skill.subTitle} />
-                {skill.skills.map((skill) => {
+                {skill.skills.map((skill, index) => {
                   return (
-                    <motion.div variants={animaSubItems}>
+                    <motion.div variants={animaSubItems} key={index}>
                       <Title size="h4" key={skill} text={skill} />
                     </motion.div>
                   );
