@@ -1,10 +1,7 @@
 import styled from 'styled-components';
-import homeBg from '../../assets/img/home-bg.jpg';
+import { motion } from 'framer-motion';
 
-export const Container = styled.main`
-  background: url(${homeBg}) no-repeat center;
-  background-size: cover;
-  background-position: center;
+export const Container = styled(motion.main)`
   width: 100%;
   height: 100vh;
   display: flex;
@@ -12,17 +9,41 @@ export const Container = styled.main`
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: -1;
 
   h1 {
     font-size: 4.75rem;
   }
 
-  p {
-    margin-top: 2rem;
-    font-size: 1.85rem;
-  }
-
   span {
     color: #00a3e1;
   }
+`;
+
+export const BackgroundImage = styled(motion.div)`
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+`;
+
+export const BoxTitle = styled(motion.div)`
+  position: absolute;
+  top: 50%
+  left: 50%;
+`;
+
+export const BoxTyping = styled(motion.p)`
+  margin-top: 2rem;
+  font-size: 1.85rem;
 `;

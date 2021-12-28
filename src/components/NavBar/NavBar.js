@@ -8,10 +8,10 @@ import euaflag from '../../assets/img/usa-icon.png';
 import spanishflag from '../../assets/img/espanhol-icon.png';
 
 const NavBar = () => {
-  const { setOpen } = React.useContext(GlobalContext);
+  const { setOpened } = React.useContext(GlobalContext);
 
   const handleClick = () => {
-    setOpen(false);
+    setOpened(false);
   };
 
   return (

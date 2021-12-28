@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
   x-overflow: hidden;
 
   &::-webkit-scrollbar {
-    display: none;
+    width: 0;
   }
   
   /* Não permite que o usuário selecione textos na página. */
@@ -34,12 +34,18 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${(props) => props.theme.background};
     color: ${(props) => props.theme.text}; 
     
-  p, span{
-    font-family: 'Roboto', sans-serif;
-  }
+    a, a > button {
+      position: relative;
+      z-index: 1; 
+    }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display, serif'
+    p, span{
+      font-family: 'Roboto', sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display, serif'
+    }
   } 
 `;
 

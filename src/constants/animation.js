@@ -1,3 +1,35 @@
+export const animaHome = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 5,
+      delay: 1,
+    },
+  },
+};
+
+export const animaDelayI = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 3,
+      delay: 3,
+    },
+  },
+};
+
+export const animaDelayII = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 2,
+    },
+  },
+};
+
 export const animaContainer = {
   hidden: { opacity: 0, x: 500 },
   visible: {
@@ -5,8 +37,6 @@ export const animaContainer = {
     x: 0,
     transition: {
       duration: 2,
-      delayChildren: 2,
-      staggerChildren: 1,
     },
   },
 };
@@ -20,8 +50,8 @@ export const animaItems = {
     scale: 1,
     transition: {
       duration: 2,
-      delayChildren: 1,
-      staggerChildren: 1,
+      delayChildren: 0.5,
+      staggerChildren: 0.5,
     },
   },
 };
@@ -35,8 +65,8 @@ export const animaSubItems = {
     scale: 1,
     transition: {
       duration: 2,
-      delayChildren: 1,
-      staggerChildren: 1,
+      delayChildren: 0.5,
+      staggerChildren: 0.5,
     },
   },
 };
@@ -48,7 +78,7 @@ export const animaLine = {
     opacity: 1,
     transition: {
       duration: 2,
-      delay: 8,
+      delay: 2,
     },
   },
 };

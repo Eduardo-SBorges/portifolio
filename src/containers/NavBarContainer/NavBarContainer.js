@@ -6,10 +6,10 @@ import { GlobalContext } from '../../GlobalContext';
 import { Container, FlexBox } from './NavBarContainer.styled';
 
 const NavBarContainer = () => {
-  const { open } = React.useContext(GlobalContext);
+  const { opened } = React.useContext(GlobalContext);
 
   return (
-    <Container open={open}>
+    <Container opened={opened}>
       <FlexBox>
         <Avatar />
         <NavBar />

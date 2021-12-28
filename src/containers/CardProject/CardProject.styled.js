@@ -6,6 +6,8 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  positon: relative;
+  z-index: 1;
   width: 100%;
   margin: 5% 0;
   color: ${(props) => props.theme.text};
