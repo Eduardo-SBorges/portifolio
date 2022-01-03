@@ -7,10 +7,10 @@ export const Container = Styled(motion.nav)`
 	max-width: 200px;
 	background-color: ${(props) => props.theme.menuBackGround};
 	position: fixed;
-	z-index: 1;
+	z-index: 10;
 
 	@media (max-width: 788px) {
-		display: ${(props) => (props.open ? 'block' : 'none')};
+		display: ${(props) => (props.opened ? 'block' : 'none')};
 		width: 100vw;
 	}
 `;

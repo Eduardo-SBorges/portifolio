@@ -6,7 +6,17 @@ import { animaContainer } from '../../constants/animation';
 
 const SkillsScreen = () => {
   return (
-    <Container variants={animaContainer} initial="hidden" animate="visible">
+    <Container
+      variants={animaContainer}
+      initial="hidden"
+      animate="visible"
+      exit={{
+        y: '-100vh',
+        x: '50vw',
+        opacity: 0,
+        transition: { duration: 2 },
+      }}
+    >
       <SectionHeaderContainer text="Habilidades" icon="skills" />
       <FlexBox>
         <CardSkills />

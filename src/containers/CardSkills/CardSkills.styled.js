@@ -12,7 +12,7 @@ export const Container = Styled.section`
   z-index: -1;
   
   h3 {
-    font-size: 48px;
+    font-size: 28px;
     padding: 0 10px;
     margin-bottom: 5%;
     position: relative;

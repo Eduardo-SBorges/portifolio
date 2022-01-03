@@ -5,7 +5,16 @@ import { animaContainer } from '../../constants/animation';
 
 const ErrorScreen = () => {
   return (
-    <Container variants={animaContainer} initial="hidden" animate="visible">
+    <Container
+      variants={animaContainer}
+      initial="hidden"
+      animate="visible"
+      exit={{
+        scale: -1,
+        opacity: 0,
+        transition: { duration: 2 },
+      }}
+    >
       <SectionHeaderContainer
         text="ERRO 404 - Esta página não existe"
         icon="error"

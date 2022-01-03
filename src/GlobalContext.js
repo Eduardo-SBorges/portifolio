@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-export const GlobalContext = React.createContext({})
+export const GlobalContext = React.createContext({});
 
 export const GlobalContextProvider = ({ children }) => {
-	const [open, setOpen] = React.useState(false)
+  const [opened, setOpened] = React.useState(false);
 
-	return (
-		<GlobalContext.Provider value={{ open, setOpen }}>
-			{children}
-		</GlobalContext.Provider>
-	)
-}
+  return (
+    <GlobalContext.Provider value={{ opened, setOpened }}>
+      {children}
+    </GlobalContext.Provider>
+  );
+};

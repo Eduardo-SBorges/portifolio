@@ -2,7 +2,18 @@ import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import Title from '../../components/Title/Title';
 import { personalData } from '../../constants/data';
-import { Container } from './HomeScreen.styled';
+import {
+  Container,
+  BackgroundImage,
+  BoxTitle,
+  BoxTyping,
+} from './HomeScreen.styled';
+import {
+  animaHome,
+  animaDelayI,
+  animaDelayII,
+} from '../../constants/animation';
+import homeBg from '../../assets/img/home-bg.jpg';
 
 const HomeScreen = () => {
   const el = useRef(null);
@@ -17,18 +28,47 @@ const HomeScreen = () => {
       loop: true,
     });
 
-    // Destropying
     return () => {
       typed.destroy();
     };
   }, []);
 
   return (
-    <Container>
-      <Title size="h1" text={personalData.name} />
-      <p>
-        Eu sou um <span ref={el}></span>
-      </p>
+    <Container
+      variants={animaHome}
+      initial="hidden"
+      animate="visible"
+      exit={{
+        position: 'static',
+        rotate: 360,
+        scale: 10,
+        transition: { duration: 5 },
+      }}
+    >
+      <BackgroundImage
+        animate={{
+          scale: [1, 2, 1],
+          rotate: [0, 20, 0],
+        }}
+        transition={{
+          duration: 50,
+          type: 'spring',
+          stiffness: 200,
+          damping: 20,
+          repeat: Infinity,
+        }}
+      >
+        <img src={homeBg} alt="Home" />
+      </BackgroundImage>
+      <BoxTitle
+        variants={animaDelayI}
+        exit={{ opacity: 0, transition: { duration: 0.5 } }}
+      >
+        <Title size="h1" text={personalData.name} />
+        <BoxTyping variants={animaDelayII}>
+          Eu sou um <span ref={el}></span>
+        </BoxTyping>
+      </BoxTitle>
     </Container>
   );
 };

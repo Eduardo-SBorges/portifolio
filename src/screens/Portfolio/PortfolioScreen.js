@@ -7,10 +7,20 @@ import Title from '../../components/Title/Title';
 
 const PortfolioScreen = () => {
   return (
-    <Container variants={animaContainer} initial="hidden" animate="visible">
+    <Container
+      variants={animaContainer}
+      initial="hidden"
+      animate="visible"
+      exit={{
+        y: '-100vh',
+        x: '-50vw',
+        opacity: 0,
+        transition: { duration: 2 },
+      }}
+    >
       <SectionHeaderContainer text="Portfólio" icon="portfolio" />
       <FlexBox variants={animaItems}>
-        <Title size="h3" text="Websites" />
+        <Title size="h3" text="WEBSITES" />
         <CardProject />
       </FlexBox>
     </Container>

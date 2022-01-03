@@ -6,8 +6,8 @@ import { Menu } from '@mui/icons-material';
 import { Container, Box } from './Header.styled';
 
 const Header = () => {
-  const { open, setOpen } = React.useContext(GlobalContext);
-  const toggle = () => setOpen(!open);
+  const { opened, setOpened } = React.useContext(GlobalContext);
+  const toggle = () => setOpened(!opened);
 
   const sizeLogoSvg = `large`;
 
