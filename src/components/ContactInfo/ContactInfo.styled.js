@@ -21,6 +21,7 @@ padding-left: 15px;
 
 @media (max-width: 786px) {
   flex-direction: column;
+  margin-left: 3%;
   }
 
 svg {
@@ -48,5 +49,7 @@ li{
   margin-left: 1.2%;
   padding-left: 30px;
   padding-right: 30px;
+
+ 
 }
 `
