@@ -1,14 +1,11 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Container = styled.section`
-  display: flex;
-  margin-right: -15px;
-  margin-left: -15px;
   width: 100%;
   font-family: 'Roboto', sans-serif;
   line-height: 1.65;
-  flex-direction: column;
-`
+  position: relative;
+`;
 export const BoxHeader = styled.div`
   width: 100%;
   padding-right: 15px;
@@ -47,127 +44,98 @@ export const BoxHeader = styled.div`
     background-color: #00a3e1;
     bottom: 0;
   }
-`
+`;
 
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 800px;
+  align-items: stretch;
+  justify-content: stretch;
 
   label {
     font-size: ${(props) => props.fontSize};
   }
-`
+
+  > div {
+    align-self: start;
+    width: 100%;
+  }
+`;
 export const BoxInput = styled.div`
   display: flex;
+  justify-content: center;
+  gap: 2%;
   margin-bottom: 50px;
   margin-top: 5%;
   width: 100%;
   position: relative;
+
   input {
     height: 40px;
+    border-radius: 5px;
   }
   label {
     position: absolute;
     top: ${(props) => props.top}; //7px;
-    margin-left: ${(props) => props.marginLeft}; //15p
     font-size: ${(props) => props.fontSize};
   }
-  @media (max-width: 1050px) {
-    width:70%;
-    margin-left: -5%;
-  }
-  @media (max-width: 850px) {
-    width:55%;
-    margin-left: -5%;
-  }
-  @media (max-width: 500px) {
-    width:45%;
-    margin-left:-1%;
-  }
-
- 
-`
+`;
 
 export const BoxInputLabel = styled.div`
-  display: flex;
-  flex-direction: column;
   width: 100%;
-  margin-left: 15px;
-  margin-right: 15px;
-
   label {
     margin-bottom: 5px;
   }
-
-`
+`;
 
 export const BoxTextArea = styled.div`
-  width: 96.2%;
-  margin-left: 15px;
-  margin-right: 15px;
   position: relative;
+
   input {
-    height: 163px;
+    height: 150px;
+    border-radius: 5px;
   }
 
   label {
     position: absolute;
     top: ${(props) => props.top}; //7px;
-    margin-left: ${(props) => props.marginLeft}; //15p
+    margin-left: ${(props) => props.marginLeft}; //15px
     font-size: ${(props) => props.fontSize};
   }
-  @media (max-width: 1050px) {
-    width:66%;
-    margin-left: -3%;
-  }
-  @media (max-width: 850px) {
-    width:51%;
-    margin-left: -3%;
-  }
-  @media (max-width: 500px) {
-    width:41%;
-    margin-left:0.7%;
-  }
-
-`
+`;
 
 export const BoxButton = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 40px;
 
   button {
     height: 100%;
-    margin-top: 8%;
+    margin: 5% 0;
     text-align: center;
-    width: 26.5%;
   }
-`
+`;
+
 export const BoxContact = styled.div`
-display: flex;
-width: 100%;
-align-items: center;
-justify-content: center;
-margin-top: 11%;`
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+`;
 
 export const BoxMap = styled.div`
   width: 100%;
-  height: 200px;
+  height: 300px;
+  border-radius: 5px;
   overflow: hidden;
   position: absolute;
   left: 0;
-  top:800px;
-  z-index: -1;
+  z-index: 1;
+`;
 
-  @media (max-width: 788px) {
-    margin-top: 20%;
-  }
-  @media (max-width: 578px) {
-    margin-top: 35%;
-  }
-  `
+export const EmptyBox = styled.div`
+  height: 1px;
+  width: 1px;
+  margin-bottom: 25%;
+`;
