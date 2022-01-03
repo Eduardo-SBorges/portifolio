@@ -6,7 +6,7 @@ export const Container = Styled(motion.main)`
   flex-direction: column;
   align-items: center;
   width: 80%;
-  margin: 2% 8%;
+  margin: 4% 8%;
 `;
 
 export const FlexBox = Styled.div`

@@ -12,6 +12,7 @@ import HomeScreen from './screens/Home/HomeScreen';
 import AboutScreen from './screens/About/AboutScreen';
 import ResumeScreen from './screens/Resume/ResumeScreen';
 import SkillsScreen from './screens/Skills/SkillsScreen';
+import PortfolioScreen from './screens/Portfolio/PortfolioScreen';
 import ErrorScreen from './screens/Error/ErrorScreen';
 import ContactScreen from './screens/Contact/ContactScreen';
 
@@ -29,8 +30,8 @@ const App = () => {
             <Route path="/sobre" element={<AboutScreen />} />
             <Route path="/experiencia" element={<ResumeScreen />} />
             <Route path="/habilidades" element={<SkillsScreen />} />
-            <Route path="/portfolio" element={<ErrorScreen />} />
             <Route path="/contato" element={<ContactScreen />} />
+            <Route path="/portfolio" element={<PortfolioScreen />} />
           </Routes>
         </Screens>
       </ThemeProvider>

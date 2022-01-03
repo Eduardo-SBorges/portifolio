@@ -3,7 +3,7 @@ import Title from '../../components/Title/Title';
 import { personalResume } from '../../constants/data';
 import { List, Box, Container } from './ExperienceSection.styled';
 import { motion } from 'framer-motion';
-import { animaLine, animaResumeItem } from '../../constants/animation';
+import { animaLine, animaSubItems } from '../../constants/animation';
 
 const ExperienceSection = () => {
   return (
@@ -12,7 +12,7 @@ const ExperienceSection = () => {
         <Title size="h3" text="PROFISSIONAL" />
         {personalResume.map((experience) => {
           return (
-            <motion.li key={experience.id} variants={animaResumeItem}>
+            <motion.li key={experience.id} variants={animaSubItems}>
               <motion.span variants={animaLine}>
                 <Paragraph text={experience.dateStart} />
                 <Paragraph text={experience.dateEnd} />

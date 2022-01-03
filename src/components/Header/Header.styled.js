@@ -11,6 +11,10 @@ export const Container = styled.header`
   background-color: ${(props) => props.theme.menuBackGround};
   text-align: center;
   opacity: 0;
+
+  @media (max-width: 788px) {
+    width: 100vw;
+  }
 `;
 
 export const Box = styled.div`
