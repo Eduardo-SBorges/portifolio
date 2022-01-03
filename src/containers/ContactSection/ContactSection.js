@@ -8,11 +8,13 @@ import {
   BoxTextArea,
   BoxButton,
   BoxContact,
+  BoxMap,
 } from './ContactSection.styled'
 import Title from '../../components/Title/Title'
 import Input from '../../components/Input/Input'
 import Button from '../../components/Button/Button'
 import ContactInfo from '../../components/ContactInfo/ContactInfo'
+import { GoogleMap,useJsApiLoader,Marker } from '@react-google-maps/api'
 
 const ContactSection = () => {
   const [positionTopName, setPositionTopName] = useState('7px')
@@ -24,6 +26,16 @@ const ContactSection = () => {
   const [fontSizeName, setfontSizeName] = useState('18px')
   const [fontSizeEmail, setfontSizeEmail] = useState('18px')
   const [fontSizeTextArea, setfontSizeTextArea] = useState('18px')
+
+  const { isLoaded } = useJsApiLoader({
+    id: 'google-map-script',
+    googleMapsApiKey: 'AIzaSyDXyObrDZoa_YJMuYHRNbGxvsW6-ArrMg0',
+  })
+
+  const position = {
+    lat: -31.770020104473012,
+    lng: -52.34101294604305,
+  }
 
   const handleFocusText = () => {
     setPositionTopTextArea('-25px')
@@ -104,8 +116,21 @@ const ContactSection = () => {
       <BoxContact>
         <ContactInfo />
       </BoxContact>
-      
+      <BoxMap>
+        {isLoaded ? (
+          <GoogleMap
+            mapContainerStyle={{width:'100%',height:'200px'}}
+            center={position}  
+            zoom={15}
+          >
+            <Marker position={position} />
+          </GoogleMap>
+        ) : 
+          <></>
+        }
+      </BoxMap>
     </Container>
+    
   )
 }
 export default ContactSection

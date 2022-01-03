@@ -75,6 +75,20 @@ export const BoxInput = styled.div`
     margin-left: ${(props) => props.marginLeft}; //15p
     font-size: ${(props) => props.fontSize};
   }
+  @media (max-width: 1050px) {
+    width:70%;
+    margin-left: -5%;
+  }
+  @media (max-width: 850px) {
+    width:55%;
+    margin-left: -5%;
+  }
+  @media (max-width: 500px) {
+    width:45%;
+    margin-left:-1%;
+  }
+
+ 
 `
 
 export const BoxInputLabel = styled.div`
@@ -87,6 +101,7 @@ export const BoxInputLabel = styled.div`
   label {
     margin-bottom: 5px;
   }
+
 `
 
 export const BoxTextArea = styled.div`
@@ -104,6 +119,19 @@ export const BoxTextArea = styled.div`
     margin-left: ${(props) => props.marginLeft}; //15p
     font-size: ${(props) => props.fontSize};
   }
+  @media (max-width: 1050px) {
+    width:66%;
+    margin-left: -3%;
+  }
+  @media (max-width: 850px) {
+    width:51%;
+    margin-left: -3%;
+  }
+  @media (max-width: 500px) {
+    width:41%;
+    margin-left:0.7%;
+  }
+
 `
 
 export const BoxButton = styled.div`
@@ -126,3 +154,20 @@ width: 100%;
 align-items: center;
 justify-content: center;
 margin-top: 11%;`
+
+export const BoxMap = styled.div`
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top:800px;
+  z-index: -1;
+
+  @media (max-width: 788px) {
+    margin-top: 20%;
+  }
+  @media (max-width: 578px) {
+    margin-top: 35%;
+  }
+  `

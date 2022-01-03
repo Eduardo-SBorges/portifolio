@@ -13,4 +13,16 @@ font-size: ${(props) => props.fontSize};
 top: ${(props) => props.top};//7px;
 margin-left:${(props) => props.marginLeft}; //15px
 
+@media (max-width: 1050px) {
+    flex-direction: column;
+
+    input{
+      margin-bottom: 30px;
+    }
+
+    label{
+      top: ${(props) => props.topMedia};
+    }
+  }
+
 `
