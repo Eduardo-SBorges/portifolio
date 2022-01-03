@@ -9,6 +9,8 @@ import {
   ComputerOutlined,
   RemoveRedEyeOutlined,
   DevicesOutlined,
+  WhatsappOutlined,
+  SendOutlined,
 } from '@mui/icons-material';
 
 import imgAvatar from '../assets/img/avatar.jpg';
@@ -176,3 +178,18 @@ export const personalSkills = [
     skills: ['Agile', 'Scrum', 'Kanban', 'Coaching'],
   },
 ];
+
+// Contact Information
+
+export const contactInformation = [
+  {
+    name: 'Email',
+    description: 'lineulima1@gmail.com',
+    icon: <SendOutlined fontSize={sizeLogo} />,
+  },
+  {
+    name: 'Whatsapp',
+    description: '55-99999-9999',
+    icon: <WhatsappOutlined fontSize={sizeLogo} />,
+  }
+]

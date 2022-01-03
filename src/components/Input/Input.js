@@ -1,0 +1,15 @@
+import React from 'react'
+import { INPUT, LABEL } from './Input.styled'
+
+const Input = ({ type, text, onFocus, top, marginLeft,onBlur,fontSize }) => {
+  return (
+    <>
+      <LABEL top={top} marginLeft={marginLeft} fontSize={fontSize}>
+        {text}
+      </LABEL>
+      <INPUT type={type} onFocus={onFocus} onBlur={onBlur}  />
+    </>
+  )
+}
+
+export default Input
