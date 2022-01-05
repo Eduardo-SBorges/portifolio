@@ -36,6 +36,7 @@ const App = () => {
               <Route path="/habilidades" element={<SkillsScreen />} />
               <Route path="/portfolio" element={<PortfolioScreen />} />
               <Route path="/contato" element={<ContactScreen />} />
+              <Route path="*" element={<ErrorScreen />} />
             </Routes>
           </AnimatePresence>
         </Screens>

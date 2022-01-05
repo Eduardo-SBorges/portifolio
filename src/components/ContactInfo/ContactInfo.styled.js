@@ -9,10 +9,6 @@ export const UL = styled(motion.ul)`
   list-style: none;
   display: flex;
 
-  @media (max-width: 576px) {
-    flex-direction: column;
-  }
-
   svg {
     font-size: 50px;
     margin-bottom: 10px;
@@ -37,5 +33,9 @@ export const UL = styled(motion.ul)`
     flex-direction: column;
     white-space: nowrap;
     min-width: 200px;
+
+    @media (max-width: 400px) {
+      min-width: 160px;
+    }
   }
 `;

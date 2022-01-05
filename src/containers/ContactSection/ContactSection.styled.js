@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const Container = styled.section`
   width: 100%;
@@ -6,12 +7,16 @@ export const Container = styled.section`
   line-height: 1.65;
   position: relative;
 `;
+
 export const BoxHeader = styled.div`
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   text-align: center;
-  height: 10%;
+
+  @media (max-width: 578px) {
+    margin-bottom: 10%;
+  }
 
   h3 {
     border-color: #00a3e1 !important;
@@ -46,7 +51,7 @@ export const BoxHeader = styled.div`
   }
 `;
 
-export const Form = styled.form`
+export const Form = styled(motion.form)`
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -61,7 +66,7 @@ export const Form = styled.form`
     width: 100%;
   }
 `;
-export const BoxInput = styled.div`
+export const BoxInput = styled(motion.div)`
   display: flex;
   justify-content: center;
   gap: 2%;
@@ -69,6 +74,7 @@ export const BoxInput = styled.div`
   margin-top: 5%;
   width: 100%;
   position: relative;
+  z-index: 1;
 
   input {
     height: 40px;
@@ -88,8 +94,9 @@ export const BoxInputLabel = styled.div`
   }
 `;
 
-export const BoxTextArea = styled.div`
+export const BoxTextArea = styled(motion.div)`
   position: relative;
+  z-index: 1;
 
   input {
     height: 150px;
@@ -104,7 +111,7 @@ export const BoxTextArea = styled.div`
   }
 `;
 
-export const BoxButton = styled.div`
+export const BoxButton = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,21 +119,31 @@ export const BoxButton = styled.div`
 
   button {
     height: 100%;
-    margin: 5% 0;
+    margin: 4% 0;
     text-align: center;
+    z-index: 1;
+
+    @media (max-width: 1100px) {
+      margin: 8% 0;
+    }
+    @media (max-width: 578px) {
+      margin: 10% 0;
+    }
   }
 `;
 
-export const BoxContact = styled.div`
+export const BoxContact = styled(motion.div)`
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
+  margin-bottom: 0;
 `;
 
-export const BoxMap = styled.div`
+export const BoxMap = styled(motion.div)`
   width: 100%;
   height: 300px;
+  margin-top: -2%;
   border-radius: 5px;
   overflow: hidden;
   position: absolute;
@@ -135,7 +152,39 @@ export const BoxMap = styled.div`
 `;
 
 export const EmptyBox = styled.div`
-  height: 1px;
   width: 1px;
-  margin-bottom: 25%;
+  height: 1px;
+  margin: 6% 0;
+
+  @media (max-width: 1700px) {
+    margin: 10% 0;
+  }
+
+  @media (max-width: 1500px) {
+    margin: 14% 0;
+  }
+
+  @media (max-width: 1300px) {
+    margin: 18% 0;
+  }
+
+  @media (max-width: 1100px) {
+    margin: 22% 0;
+  }
+
+  @media (max-width: 900px) {
+    margin: 26% 0;
+  }
+
+  @media (max-width: 700px) {
+    margin: 30% 0;
+  }
+
+  @media (max-width: 500px) {
+    margin: 38% 0;
+  }
+
+  @media (max-width: 400px) {
+    margin: 45% 0;
+  }
 `;
