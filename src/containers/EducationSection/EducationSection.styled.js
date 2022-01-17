@@ -5,9 +5,7 @@ export const Container = Styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: auto;
-  margin-left: 10%;
-  gap: 5rem;
+  width: 100%;
   position: relative;
   z-index: -1;
   
@@ -15,7 +13,7 @@ export const Container = Styled.section`
     font-size: 28px;
     padding: 0 10px;
     position: relative;
-    border-bottom: 1px solid #00A3E1;
+    border-bottom: 1px solid ${(props) => props.theme.details};
 
     &::before {
       position: absolute;
@@ -23,7 +21,7 @@ export const Container = Styled.section`
       width: 2px;
       height: 5px;
       left: 0;
-      background-color: #00A3E1;
+      background-color: ${(props) => props.theme.details};
       bottom: 0;
     }
 
@@ -33,7 +31,7 @@ export const Container = Styled.section`
     width: 2px;
     height: 5px;
     right: 0;
-    background-color: #00A3E1;
+    background-color: ${(props) => props.theme.details};
     bottom: 0;
     }
   }
@@ -43,8 +41,8 @@ export const Container = Styled.section`
   }
 
   h5 {
-    font-size: 12px;
-    color: #00A3E1
+    font-size: 18px;
+    color: ${(props) => props.theme.details};
   }
 `;
 
@@ -63,9 +61,8 @@ export const List = Styled.ul`
     justify-content: center;
 
     span{
-      background-color: #fff;
-      width: 2px;
-      height: 150px;
+      background-color: ${(props) => props.theme.details};
+      width: 3px;
       max-height: 100%;
       margin-right: 3rem;
       position: relative;
@@ -74,7 +71,7 @@ export const List = Styled.ul`
       &:before{
         content: '';
         display: block;
-        border: 1px solid #fff;
+        border: 10px solid ${(props) => props.theme.text};
         width: 10px;
         height: 10px;
         border-radius: 50%;
@@ -86,7 +83,7 @@ export const List = Styled.ul`
       &:after{
         content: '';
         display: block;
-        border: 1px solid #fff;
+        border: 10px solid ${(props) => props.theme.text};
         width: 10px;
         height: 10px;
         border-radius: 50%;
@@ -96,12 +93,14 @@ export const List = Styled.ul`
       }
 
       p:first-child{
+        color: ${(props) => props.theme.text};
         position: absolute;
         top: -15px;
         right: 13px;
       }
 
       p:last-child{
+        color: ${(props) => props.theme.text};
         position: absolute;
         bottom: -15px;
         right: 13px;

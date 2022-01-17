@@ -15,7 +15,7 @@ import Title from '../../components/Title/Title';
 import Input from '../../components/Input/Input';
 import Button from '../../components/Button/Button';
 import ContactInfo from '../../components/ContactInfo/ContactInfo';
-import { animaItems, animaSubItems } from '../../constants/animation';
+import { animaItems } from '../../constants/animation';
 
 const ContactSection = () => {
   const [positionTopName, setPositionTopName] = useState('7px');
@@ -61,11 +61,11 @@ const ContactSection = () => {
   };
   return (
     <Container>
-      <Form variants={animaItems}>
-        <BoxHeader>
-          <Title size="h3" text="Vamos Conversar ?" />
-        </BoxHeader>
-        <BoxInput variants={animaSubItems}>
+      <BoxHeader>
+        <Title size="h3" text="Vamos Conversar ?" />
+      </BoxHeader>
+      {/*<Form variants={animaItems}>
+         <BoxInput variants={animaSubItems}>
           <BoxInputLabel>
             <Input
               onFocus={handleFocusName}
@@ -103,7 +103,7 @@ const ContactSection = () => {
         <BoxButton variants={animaItems}>
           <Button size="small" text="Enviar Mensagem" />
         </BoxButton>
-      </Form>
+      </Form> */}
       <BoxContact variants={animaItems}>
         <ContactInfo />
       </BoxContact>
@@ -112,7 +112,7 @@ const ContactSection = () => {
           title="Pelotas/RS"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28063363.244209632!2d-65.120503985259!3d-30.83897257397353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95104876f10dfe49%3A0x18cd959725e0398b!2sPelotas%20-%20RS!5e0!3m2!1spt-BR!2sbr!4v1641395653162!5m2!1spt-BR!2sbr"
           width="100%"
-          height="450"
+          height="200"
           style={{ borderRadius: '5px' }}
           loading="lazy"
         ></iframe>

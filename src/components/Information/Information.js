@@ -11,6 +11,10 @@ const Information = ({
   nameInfo,
   age,
   ageInfo,
+  languages,
+  languagesInfo,
+  state,
+  stateInfo,
   email,
   emailInfo,
   residence,
@@ -33,6 +37,14 @@ const Information = ({
           {age}
         </LI>
         <LI variants={animaSubItems}>
+          <SPAN>{languagesInfo}</SPAN>
+          {languages}
+        </LI>
+        <LI variants={animaSubItems}>
+          <SPAN>{stateInfo}</SPAN>
+          {state}
+        </LI>
+        <LI variants={animaSubItems}>
           <SPAN>{emailInfo}</SPAN>
           {email}
         </LI>
@@ -50,7 +62,7 @@ const Information = ({
         </LI>
       </UL>
       <a href={arquiveTXT} download>
-        <Button size="small" text="Download CV" />
+        <Button size="small" text="Download CV" disabled="disabled" />
       </a>
     </Container>
   );

@@ -20,7 +20,7 @@ export const FlexBox = Styled(motion.div)`
     font-size: 28px;
     padding: 0 10px;
     position: relative;
-    border-bottom: 1px solid #00A3E1;
+    border-bottom: 1px solid ${(props) => props.theme.details};
 
     &::before {
       position: absolute;
@@ -28,7 +28,7 @@ export const FlexBox = Styled(motion.div)`
       width: 2px;
       height: 5px;
       left: 0;
-      background-color: #00A3E1;
+      background-color: ${(props) => props.theme.details};
       bottom: 0;
     }
 
@@ -38,7 +38,7 @@ export const FlexBox = Styled(motion.div)`
     width: 2px;
     height: 5px;
     right: 0;
-    background-color: #00A3E1;
+    background-color: ${(props) => props.theme.details};
     bottom: 0;
     }
   }

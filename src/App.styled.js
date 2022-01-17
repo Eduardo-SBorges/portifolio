@@ -24,18 +24,22 @@ export const Screens = styled.div`
 
   nav {
     grid-area: NavBarContainer;
-    animation: showNavBar 2s;
+    animation: showNavBar 3s;
+
+    @media (max-width: 788px) {
+      background-color: black;
+      border-right: 1px solid ${(props) => props.theme.details};
+    }
   }
 
   @keyframes showNavBar {
     from {
       opacity: 0;
-      height: 0;
+      width: 0;
     }
-    ,
     to {
       opacity: 1;
-      height: auto;
+      width: 100%;
     }
   }
 

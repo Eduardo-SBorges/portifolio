@@ -22,9 +22,9 @@ const HomeScreen = () => {
     const typed = new Typed(el.current, {
       strings: [personalData.profission],
       startDelay: 300,
-      typeSpeed: 100,
-      backSpeed: 100,
-      backDelay: 100,
+      typeSpeed: 80,
+      backSpeed: 80,
+      backDelay: 3000,
       loop: true,
     });
 
@@ -66,7 +66,7 @@ const HomeScreen = () => {
       >
         <Title size="h1" text={personalData.name} />
         <BoxTyping variants={animaDelayII}>
-          Eu sou um <span ref={el}></span>
+          Sou um <span ref={el}></span>
         </BoxTyping>
       </BoxTitle>
     </Container>

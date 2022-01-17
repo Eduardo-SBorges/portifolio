@@ -3,7 +3,16 @@ import { Btn } from './Button.styled';
 import PropTypes from 'prop-types';
 import { animaSubItems } from '../../constants/animation';
 
-const Button = ({ onClick, type, text, size, padding, width, margin }) => {
+const Button = ({
+  onClick,
+  type,
+  text,
+  size,
+  padding,
+  width,
+  margin,
+  ...props
+}) => {
   switch (size) {
     case 'medium':
       padding = '10px 15px';
@@ -40,6 +49,7 @@ const Button = ({ onClick, type, text, size, padding, width, margin }) => {
       size={size}
       padding={padding}
       width={width}
+      {...props}
     >
       {text}
     </Btn>

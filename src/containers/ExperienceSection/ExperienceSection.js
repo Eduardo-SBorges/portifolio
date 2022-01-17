@@ -19,7 +19,16 @@ const ExperienceSection = () => {
               </motion.span>
               <Box>
                 <Title size="h4" text={experience.subTitle} />
-                <Title size="h5" text={experience.company} />
+                <Title
+                  size="h5"
+                  text={
+                    experience.company +
+                    ' ~ ' +
+                    experience.dateStart +
+                    ' à ' +
+                    experience.dateEnd
+                  }
+                />
                 <Paragraph text={experience.description} />
               </Box>
             </motion.li>

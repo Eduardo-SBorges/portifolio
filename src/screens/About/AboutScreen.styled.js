@@ -15,6 +15,11 @@ export const FlexBox = Styled(motion.div)`
   align-items: center;
   margin-bottom: 35px;
   position: relative;
+
+  span {
+  border-bottom: 3px solid ${(props) => props.theme.details};
+
+  }
   
   @media (max-width: 1100px) {
     flex-direction: column;

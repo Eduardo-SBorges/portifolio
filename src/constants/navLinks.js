@@ -7,9 +7,7 @@ import {
   BookOutlined,
 } from '@mui/icons-material';
 
-//Dados deverão estar em uma array de objetos e serem chamados usando o comando .map( ) retornando uma lista (<ul> ... <ul>).
-
-const sizeLogoSvg = `large`;
+const sizeLogoSvg = `medium`;
 
 export const navLinks = [
   {

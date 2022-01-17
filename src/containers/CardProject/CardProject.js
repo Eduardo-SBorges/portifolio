@@ -31,11 +31,13 @@ const CardProject = () => {
                 </BoxTechnologies>
                 <BoxButtons>
                   <a href={project.urlRepository}>
-                    <Button text="Ver Repositório" />
+                    <Button text="Repositório" />
                   </a>
-                  <a href={project.urlProject}>
-                    <Button text="Ver a Página Ativa" />
-                  </a>
+                  {project.urlProject && (
+                    <a href={project.urlProject}>
+                      <Button text="Visitar" />
+                    </a>
+                  )}
                 </BoxButtons>
               </BoxInfo>
             </FlexBoxLeft>
@@ -43,11 +45,13 @@ const CardProject = () => {
               <img src={project.img} alt={project.subTitle} />
               <BoxButtonsMedia>
                 <a href={project.urlRepository}>
-                  <Button text="Ver Repositório" size="small" />
+                  <Button text="Repositório" size="small" />
                 </a>
-                <a href={project.urlProject}>
-                  <Button text="Ver a Página Ativa" size="small" />
-                </a>
+                {project.urlProject && (
+                  <a href={project.urlProject}>
+                    <Button text="Visitar" />
+                  </a>
+                )}
               </BoxButtonsMedia>
             </FlexBoxRight>
           </FlexBox>

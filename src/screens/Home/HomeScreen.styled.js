@@ -19,7 +19,8 @@ export const Container = styled(motion.main)`
   }
 
   span {
-    color: #00a3e1;
+    color: ${(props) => props.theme.details};
+    border-bottom: 1px solid ${(props) => props.theme.details};
   }
 `;
 
@@ -39,8 +40,12 @@ export const BackgroundImage = styled(motion.div)`
 
 export const BoxTitle = styled(motion.div)`
   position: absolute;
-  top: 50%
-  left: 50%;
+
+  @media (max-width: 1200px) {
+    h1 {
+      display: none;
+    }
+  }
 `;
 
 export const BoxTyping = styled(motion.p)`

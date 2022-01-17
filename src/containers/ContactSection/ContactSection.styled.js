@@ -10,6 +10,8 @@ export const Container = styled.section`
 
 export const BoxHeader = styled.div`
   width: 100%;
+  margin-top: 1%;
+  margin-bottom: 5%;
   padding-right: 15px;
   padding-left: 15px;
   text-align: center;
@@ -19,7 +21,7 @@ export const BoxHeader = styled.div`
   }
 
   h3 {
-    border-color: #00a3e1 !important;
+    border-color: ${(props) => props.theme.details};
     display: inline-block;
     font-size: 22px;
     font-weight: 600;
@@ -28,7 +30,7 @@ export const BoxHeader = styled.div`
     position: relative;
     text-transform: uppercase;
     padding: 5px 10px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+    border-bottom: 2px solid ${(props) => props.theme.details};
   }
 
   h3::before {
@@ -37,7 +39,7 @@ export const BoxHeader = styled.div`
     content: '';
     width: 2px;
     height: 5px;
-    background-color: #00a3e1;
+    background-color: ${(props) => props.theme.details};
     bottom: 0;
   }
   h3::after {
@@ -46,7 +48,7 @@ export const BoxHeader = styled.div`
     right: 0px;
     width: 2px;
     height: 5px;
-    background-color: #00a3e1;
+    background-color: ${(props) => props.theme.details};
     bottom: 0;
   }
 `;
@@ -142,7 +144,6 @@ export const BoxContact = styled(motion.div)`
 
 export const BoxMap = styled(motion.div)`
   width: 100%;
-  height: 300px;
   margin-top: -2%;
   border-radius: 5px;
   overflow: hidden;

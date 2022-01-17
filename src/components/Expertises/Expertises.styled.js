@@ -9,6 +9,10 @@ export const Container = styled(motion.div)`
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+
+  @media (max-width: 1100px) {
+    margin-top: -30px;
+  }
 `;
 export const Header = styled(motion.div)`
   position: relative;
@@ -21,7 +25,7 @@ export const Header = styled(motion.div)`
   text-align: center;
 
   h3 {
-    border-color: #00a3e1 !important;
+    border-color: ${(props) => props.theme.details};
     display: inline-block;
     font-size: 28px;
     font-weight: 600;
@@ -30,7 +34,7 @@ export const Header = styled(motion.div)`
     position: relative;
     text-transform: uppercase;
     padding: 5px 10px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+    border-bottom: 2px solid ${(props) => props.theme.details};
   }
 
   h3::before {
@@ -39,8 +43,7 @@ export const Header = styled(motion.div)`
     content: '';
     width: 2px;
     height: 5px;
-    /* background-color: rgba(255, 255, 255, 0.6) ; */
-    background-color: #00a3e1;
+    background-color: ${(props) => props.theme.details};
     bottom: 0;
   }
   h3::after {
@@ -49,7 +52,7 @@ export const Header = styled(motion.div)`
     right: 0px;
     width: 2px;
     height: 5px;
-    background-color: #00a3e1;
+    background-color: ${(props) => props.theme.details};
     bottom: 0;
   }
 `;
@@ -58,12 +61,13 @@ export const UL = styled(motion.ul)`
   list-style: none;
   display: flex;
   position: relative;
-  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  margin-left: 5%;
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1180px) {
     flex-direction: column;
+    margin-left: 0;
   }
 
   svg {
@@ -71,16 +75,18 @@ export const UL = styled(motion.ul)`
     margin-bottom: 10px;
     line-height: 1em;
   }
+
   h4 {
     font-size: 18px;
     font-weight: 600;
+    margin-bottom: -1%;
+    border-bottom: 1px solid ${(props) => props.theme.details};
   }
   p {
     font-size: 14.5px;
     line-height: 22px;
-    margin-bottom: 0;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
     text-align: center;
   }
   li {
@@ -88,7 +94,8 @@ export const UL = styled(motion.ul)`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-right: 1.2%;
-    margin-left: 1.2%;
+    gap: 0.3rem;
+    margin-right: 4%;
+    margin-left: 4%;
   }
 `;

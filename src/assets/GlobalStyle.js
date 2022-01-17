@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
   outline: 0;
   box-sizing: border-box;
   text-decoration: none;
-  x-overflow: hidden;
+  overflow-x: hidden;
 
   &::-webkit-scrollbar {
     width: 0;

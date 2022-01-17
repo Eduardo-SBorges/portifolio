@@ -23,6 +23,7 @@ export const BoxAvatar = styled.div`
 export const BoxName = styled.div`
   width: 100%;
   padding: 1%;
+  margin-bottom: 2%;
   background-color: ${(props) => props.theme.avatarTitle};
   position: ${(props) => props.position};
   bottom: ${(props) => props.bottom};
@@ -30,6 +31,7 @@ export const BoxName = styled.div`
 
   @media (max-width: 576px), (max-height: 600px) {
     padding: 0;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    border-radius: 30px;
   }
 `;

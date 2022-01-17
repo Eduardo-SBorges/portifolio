@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from '../Title/Title';
-import { Container,UL } from './ContactInfo.styled';
+import { Container, UL } from './ContactInfo.styled';
 import { contactInformation } from '../../constants/data';
 import Paragraph from '../Paragraph/Paragraph';
 import { motion } from 'framer-motion';

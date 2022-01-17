@@ -8,6 +8,9 @@ export const Container = styled(motion.div)`
 export const UL = styled(motion.ul)`
   list-style: none;
   display: flex;
+  @media (max-width: 578px) {
+    flex-direction: column-reverse;
+  }
 
   svg {
     font-size: 50px;

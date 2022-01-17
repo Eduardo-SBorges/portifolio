@@ -4,14 +4,15 @@ import { motion } from 'framer-motion';
 export const Container = styled(motion.div)`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: 30%;
-  padding-right: 15px;
-  padding-left: 15px;
+  align-items: flex-end;
+  width: 40%;
 
   @media (max-width: 1100px) {
-    width: 100%;
+    width: 90%;
+    height: 600px;
+    margin-top: -180px;
     text-align: start;
+    align-items: center;
 
     a {
       @media (max-width: 1100px) {
@@ -26,6 +27,7 @@ export const Container = styled(motion.div)`
     font-weight: 700;
     margin-bottom: 20px;
     color: ${(props) => props.theme.text};
+    border-bottom: 1px solid ${(props) => props.theme.details};
     line-height: 1.2;
 
     @media (max-width: 1100px) {
@@ -72,7 +74,8 @@ export const SPAN = styled.span`
   position: relative;
   display: inline-block;
   margin-right: 15px;
+  margin-bottom: -5px;
   padding-bottom: 1px;
   color: #ffffff;
-  border-color: #00a3e1 !important;
+  border-color: ${(props) => props.theme.details};
 `;

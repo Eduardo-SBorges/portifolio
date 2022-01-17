@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 export const Container = Styled(motion.main)`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   width: 91.5%;
   margin: 4%;
 `;
@@ -12,7 +12,8 @@ export const Container = Styled(motion.main)`
 export const FlexBox = Styled(motion.div)`
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+
   
   @media (max-width: 1400px) {
     flex-direction: column;

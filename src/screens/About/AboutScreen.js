@@ -33,7 +33,11 @@ const About = () => {
           name={personalInformation.name}
           ageInfo="Idade:"
           age={personalInformation.age}
-          emailInfo="Email:"
+          languagesInfo="Idiomas:"
+          languages={personalInformation.languages}
+          stateInfo="Estado Cívil:"
+          state={personalInformation.state}
+          emailInfo="E-mail:"
           email={personalInformation.email}
           residenceInfo="Residência:"
           residence={personalInformation.residence}

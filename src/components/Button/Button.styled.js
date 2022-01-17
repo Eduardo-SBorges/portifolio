@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Btn = styled.button`
-  border: 2px solid #ffffff;
-  color: #00a3e1 !important;
+  color: ${(props) => props.theme.details};
+  border: 2px solid ${(props) => props.theme.details};
   padding: 10px 20px;
   text-transform: uppercase;
   background-color: transparent;
@@ -11,18 +11,21 @@ export const Btn = styled.button`
   transition: all 0.3s ease;
   cursor: pointer;
   font-size: 14px;
-  color: #ffffff;
   font-weight: 600;
   position: relative;
   line-height: 100%;
   letter-spacing: 1px;
   overflow: hidden;
-  border-color: #00a3e1;
   border-radius: 5px;
 
+  :disabled {
+    cursor: not-allowed;
+  }
+
   &:hover {
-    background-color: #00a3e1;
-    color: #000 !important;
+    background-color: ${(props) => props.theme.details};
+    color: #000;
+    border: 2px solid #000;
     transition: all 0.3s ease;
   }
 `;

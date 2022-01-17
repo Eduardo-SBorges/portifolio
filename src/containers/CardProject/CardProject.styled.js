@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  positon: relative;
+  position: relative;
   z-index: 1;
   width: 100%;
   margin: 5% 0;
@@ -17,8 +17,9 @@ export const FlexBox = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   max-width: 1200px;
-  border: 2px dashed ${(props) => props.theme.border};
+  border: 2px dashed ${(props) => props.theme.details};
   border-radius: 2%;
   margin-bottom: 5%;
   background-color: #ffffff10;

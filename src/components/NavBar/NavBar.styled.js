@@ -8,8 +8,8 @@ export const Container = styled.nav`
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      padding: 5% 10%;
-      border-bottom: 1px solid ${(props) => props.theme.border};
+      padding: 2% 10%;
+      border-bottom: 1px solid ${(props) => props.theme.details};
 
       @media (max-height: 670px) {
         padding: 2% 10%;
@@ -28,6 +28,13 @@ export const Container = styled.nav`
         line-height: 2.5rem;
         font-size: 0.8rem;
         letter-spacing: 0.05rem;
+        padding: 0 10%;
+
+        :hover {
+          color: #fff;
+          background-color: ${(props) => props.theme.hoverNav};
+          border-radius: 30px;
+        }
       }
 
       img {
@@ -39,7 +46,7 @@ export const Container = styled.nav`
         cursor: pointer;
 
         &:first-child {
-          border: 3px solid ${(props) => props.theme.border};
+          border: 3px solid ${(props) => props.theme.details};
           border-radius: 50%;
         }
       }

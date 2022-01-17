@@ -19,7 +19,16 @@ const EducationSection = () => {
               </motion.span>
               <Box>
                 <Title size="h4" text={education.subTitle} />
-                <Title size="h5" text={education.school} />
+                <Title
+                  size="h5"
+                  text={
+                    education.school +
+                    ' ~ ' +
+                    education.dateStart +
+                    ' à ' +
+                    education.dateEnd
+                  }
+                />
                 <Paragraph text={education.description} />
               </Box>
             </motion.li>

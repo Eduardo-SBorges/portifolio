@@ -8,7 +8,7 @@ export const Container = styled.header`
   z-index: 2;
   padding: 1.2rem 0;
   width: 100%;
-  background-color: ${(props) => props.theme.menuBackGround};
+  background-color: ${(props) => props.theme.header};
   text-align: center;
   opacity: 0;
 

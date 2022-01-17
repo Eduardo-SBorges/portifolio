@@ -14,6 +14,7 @@ export const FlexBox = Styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-right: 15%;
   
   @media (max-width: 1400px) {
     flex-direction: column;
