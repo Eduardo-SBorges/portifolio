@@ -66,7 +66,7 @@ const HomeScreen = () => {
       >
         <Title size="h1" text={personalData.name} />
         <BoxTyping variants={animaDelayII}>
-          Sou um <span ref={el}></span>
+          I am an <span ref={el}></span>
         </BoxTyping>
       </BoxTitle>
     </Container>

@@ -20,7 +20,7 @@ const Footer = () => {
         ))}
       </BoxSocial>
       <Paragraph text={`${time.year} @ ${personalData.name}.`} />
-      <Paragraph text="Todos os direitos reservados." />
+      <Paragraph text="All rights reserved." />
     </Container>
   );
 };

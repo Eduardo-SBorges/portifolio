@@ -58,6 +58,7 @@ export const Header = styled(motion.div)`
 `;
 
 export const UL = styled(motion.ul)`
+  text-align: center;
   list-style: none;
   display: flex;
   position: relative;

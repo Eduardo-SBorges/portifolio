@@ -25,10 +25,12 @@ import deploy11 from '../assets/img/deploy11.jpg';
 export const personalData = {
   name: 'Eduardo Borges',
   imgProfileSrc: imgAvatar,
-  profission: 'Desenvolvedor!',
-  aboutMeTitle: 'Sobre mim',
-  aboutMeText:
-    'Olá, sou Eduardo! Formado em Administração de Empresas com foco em coaching e análise comportamental. Buscando uma nova paixão, me encontrei no universo da tecnologia. Atualmente, estou trabalhando como desenvolvedor AEM, especificamente com desenvolvimento de aplicações web. Curioso, criativo e disciplinado, fico na maior parte do meu tempo livre estudando novas tecnologias, batendo papo em calls com amigos e com a família (sou casado). Tenho experiência em visão de negócios e gestão de pessoas, assim como habilidades em liderança e comunicação com foco em entrega de resultados.',
+  profission: 'AEM Solution Specialist!',
+  aboutMeTitle: 'About me',
+  aboutMeTextOne:
+    "Hi, I'm Eduardo and I'm 24 years old. I am an AEM Solution Specialist and I work on projects with Compass.uol. I define myself as curious, creative and disciplined and my greatest skill is learning what technology has the best to offer us in a fast and agile way.",
+  aboutMeTextTwo:
+    "My roots are the frontend (React, Vue and Angular), however, I am actively involved with the backend, devops and cloud. In addition, I have a degree in Management with a focus on coaching, leadership and behavioral analysis, skills that drive me as a Tech Lead."
 };
 
 // Social Media
@@ -38,22 +40,22 @@ const sizeLogo = `large`;
 
 export const expert = [
   {
-    title: 'Desenvolvimento Web',
+    title: 'Web Development',
     icon: <ComputerOutlined fontSize={sizeLogo} />,
     description:
-      'Desenvolvimento Web Front-end utilizando a tecnologia ADOBE AEM (Adobe Experience Manager).',
+      'Frontend development with JavaScript Vanilla, React, Vue and Angular with expertise in AEM.',
   },
   {
-    title: 'Responsividade',
+    title: 'Responsive and Optimized Layouts',
     icon: <DevicesOutlined fontSize={sizeLogo} />,
     description:
-      'Desenvolvimento de aplicações WEB personalizadas e que se adequem a todos os dispositivos e interfaces na atual geração.',
+      'Development with a focus on the best usability and user experience that uses the application.',
   },
   {
-    title: 'Web Design',
+    title: 'Tech Lead',
     icon: <RemoveRedEyeOutlined fontSize={sizeLogo} />,
     description:
-      'Com o objetivo de me tornar um NINJA em estilização de sites, busco criar sites com designs modernos, animados e criativos.',
+      'I have a degree in Management with a focus on coaching, leadership and behavioral analysis, skills that drive me as a Tech Lead.',
   },
 ];
 
@@ -158,12 +160,12 @@ export const personalEducation = [
 // Screen About Me
 
 export const personalInformation = {
-  title: 'Informações Pessoais',
+  title: 'Personal Informations',
   name: 'Eduardo Borges',
-  age: '23',
-  languages: 'Português e Inglês',
-  state: 'Casado',
-  residence: 'Pelotas, RS, Brasil',
+  age: '24',
+  languages: 'Portuguese | English',
+  state: 'Married',
+  residence: 'Pelotas, RS, Brazil',
   email: 'eduardo.borges@compasso.com.br',
   linkedin: 'https://www.linkedin.com/in/eduardoxxborges/',
   github: 'https://github.com/Eduardo-SBorges',

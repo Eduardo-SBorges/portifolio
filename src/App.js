@@ -31,11 +31,11 @@ const App = () => {
           <AnimatePresence>
             <Routes location={location} key={location.key}>
               <Route path="/" element={<HomeScreen />} />
-              <Route path="/sobre" element={<AboutScreen />} />
-              <Route path="/experiencia" element={<ResumeScreen />} />
-              <Route path="/habilidades" element={<SkillsScreen />} />
+              <Route path="/about" element={<AboutScreen />} />
+              <Route path="/experience" element={<ResumeScreen />} />
+              <Route path="/skills" element={<SkillsScreen />} />
               <Route path="/portfolio" element={<PortfolioScreen />} />
-              <Route path="/contato" element={<ContactScreen />} />
+              <Route path="/contact" element={<ContactScreen />} />
               <Route path="*" element={<ErrorScreen />} />
             </Routes>
           </AnimatePresence>

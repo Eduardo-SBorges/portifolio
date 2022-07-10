@@ -25,21 +25,22 @@ const About = () => {
       <FlexBox variants={animaItems} initial="hidden" animate="visible">
         <PersonalInfo
           title={personalData.aboutMeTitle}
-          text={personalData.aboutMeText}
+          text_one={personalData.aboutMeTextOne}
+          text_two={personalData.aboutMeTextTwo}
         />
         <Information
           title={personalInformation.title}
-          nameInfo="Nome:"
+          nameInfo="Name:"
           name={personalInformation.name}
-          ageInfo="Idade:"
+          ageInfo="Age:"
           age={personalInformation.age}
-          languagesInfo="Idiomas:"
+          languagesInfo="Languages:"
           languages={personalInformation.languages}
-          stateInfo="Estado Cívil:"
+          stateInfo="Marital Status:"
           state={personalInformation.state}
-          emailInfo="E-mail:"
+          emailInfo="Email:"
           email={personalInformation.email}
-          residenceInfo="Residência:"
+          residenceInfo="Adress:"
           residence={personalInformation.residence}
           linkedinInfo="Linkedin:"
           linkedin={personalInformation.linkedin}

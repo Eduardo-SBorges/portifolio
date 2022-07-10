@@ -11,33 +11,33 @@ const sizeLogoSvg = `medium`;
 
 export const navLinks = [
   {
-    name: 'INICIO',
+    name: 'HOME',
     src: '/',
     svgLogo: <HomeOutlined fontSize={sizeLogoSvg} />,
   },
   {
-    name: 'SOBRE',
-    src: '/sobre',
+    name: 'ABOUT',
+    src: '/about',
     svgLogo: <PermIdentity fontSize={sizeLogoSvg} />,
   },
   {
-    name: 'EXPERIÊNCIA',
-    src: '/experiencia',
+    name: 'EXPERIENCE',
+    src: '/experience',
     svgLogo: <BadgeOutlined fontSize={sizeLogoSvg} />,
   },
   {
-    name: 'HABILIDADES',
-    src: '/habilidades',
+    name: 'SKILLS',
+    src: '/skills',
     svgLogo: <BookOutlined fontSize={sizeLogoSvg} />,
   },
   {
-    name: 'PORTFÓLIO',
+    name: 'PORTFOLIO',
     src: '/portfolio',
     svgLogo: <WorkOutlineOutlined fontSize={sizeLogoSvg} />,
   },
   {
-    name: 'CONTATO',
-    src: '/contato',
+    name: 'CONTACT',
+    src: '/contact',
     svgLogo: <EmailOutlined fontSize={sizeLogoSvg} />,
   },
 ];
