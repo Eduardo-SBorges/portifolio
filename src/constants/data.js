@@ -7,6 +7,8 @@ import {
   SendOutlined,
 } from '@mui/icons-material';
 
+import calculateAge from '../utils/calculateAge';
+
 import imgAvatar from '../assets/img/avatar.jpg';
 import deploy1 from '../assets/img/deploy1.jpg';
 import deploy2 from '../assets/img/deploy2.jpg';
@@ -25,12 +27,14 @@ import deploy11 from '../assets/img/deploy11.jpg';
 export const personalData = {
   name: 'Eduardo Borges',
   imgProfileSrc: imgAvatar,
-  profission: 'AEM Solution Specialist!',
+  profission: 'AEM Architect!',
   aboutMeTitle: 'About me',
   aboutMeTextOne:
-    "Hi, I'm Eduardo and I'm 24 years old. I am an AEM Solution Specialist and I work on projects with Compass.uol. I define myself as curious, creative and disciplined and my greatest skill is learning what technology has the best to offer us in a fast and agile way.",
+    "Hi, I'm Eduardo and I'm " +
+    calculateAge('1998-04-03') +
+    ' years old. I am an AEM Solution Specialist and I work on projects with Compass.uol. I define myself as curious, creative and disciplined and my greatest skill is learning what technology has the best to offer us in a fast and agile way.',
   aboutMeTextTwo:
-    "My roots are the frontend (React, Vue and Angular), however, I am actively involved with the backend, devops and cloud. In addition, I have a degree in Management with a focus on coaching, leadership and behavioral analysis, skills that drive me as a Tech Lead."
+    'My roots are the frontend (React, Vue and Angular), however, I am actively involved with the backend, devops and cloud. In addition, I have a degree in Management with a focus on coaching, leadership and behavioral analysis, skills that drive me as a Tech Lead.',
 };
 
 // Social Media
